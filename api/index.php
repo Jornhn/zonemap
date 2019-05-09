@@ -6,11 +6,12 @@ require_once("config.php");
         if($_GET['id']){
 
             $id = $_GET['id'];
-            echo json_encode($db->query("SELECT * FROM locations WHERE id=".$id.""));
+            // --  LEFT JOIN only in one specific building array --
+            echo json_encode($db->query("SELECT * FROM building WHERE id=".$id.""));
             
         }else{
-            
-            echo json_encode($db->query("SELECT * FROM locations"));
+            //-- json encode all buildings for map --
+            echo json_encode($db->query("SELECT * FROM building"));
         }
     }else{
         http_response_code(405);
