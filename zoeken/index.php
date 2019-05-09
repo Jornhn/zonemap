@@ -17,12 +17,18 @@
 </head>
 
 <body>
-  <!--Searchform moet linken naar reslutate -->
+  <!--Searchform moet linken naar resultaten -->
   <form class="Searchform" action="index.html" method="post">
     <div class="md-form active-pink active-pink-2 mb-3 mt-0">
       <input class="form-control" type="text" placeholder="Zoeken" aria-label="Search">
     </div>
+
+    <div class="col-7">
+      <input type="text" class="form-control" placeholder="City">
+    </div>
+
   </form>
+
 
 
   <!-- Optional JavaScript -->
