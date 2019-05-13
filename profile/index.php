@@ -15,11 +15,11 @@
         <div class="form-group">
             <input type="password" class="form-control" id="formGroupExampleInput" placeholder="Wachtwoord">
         </div>
-        <button type="submit" class="btn btn-primary custom-btn">Inloggen</button>
+        <button id="login-submit" type="submit" class="btn btn-primary custom-btn">Inloggen</button>
 
         <a id="pass-forget" href="">Wachtwoord vergeten</a>
 
-        <button type="submit" class="btn btn-default fb-btn"><i class="fab fa-facebook-square"></i> Login met Facebook</button>
+        <button type="submit" onclick="window.location = 'https://www.facebook.com';" class="btn btn-default fb-btn"><i class="fab fa-facebook-square"></i> Login met Facebook</button>
     </div>
 
     <div id="register">
@@ -39,7 +39,7 @@
         <div class="form-group">
             <input type="password" class="form-control" id="formGroupExampleInput" placeholder="Wachtwoord herhalen">
         </div>
-        <button type="submit" class="btn btn-primary custom-btn">Aanmelden</button>
+        <button id="register-submit" type="submit" class="btn btn-primary custom-btn">Aanmelden</button>
 
     </div>
 </div>

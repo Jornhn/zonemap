@@ -23,4 +23,30 @@ $(document).ready(function() {
     
       }
     });
+
+    $('.custom-btn').click(function(e) {
+
+      console.log(this.id);
+
+      if(this.id === 'login-submit'){
+        Swal.fire(
+          'Ingelogd',
+          'Gebruikersnaam en wachtwoord zijn correct',
+          'success'
+        )
+
+      }else if(this.id === 'register-submit'){
+        Swal.fire(
+          'Aanmelden gelukt!',
+          'Je bent nu succesvol aangemeld!',
+          'success'
+        )
+      }
+
+      
+
+    });
+    
 });
+
+
