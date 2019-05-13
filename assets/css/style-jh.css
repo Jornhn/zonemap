@@ -37,6 +37,15 @@
     line-height: 50px;
     margin-bottom: 40px;
     width: 100%;
+
+}
+
+.profile-container #tab-login{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.profile-container #tab-register{
+    border-radius: 0px 10px 10px 0px;
 }
 
 
