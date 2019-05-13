@@ -7,7 +7,7 @@
             
             <div class="col sm-8" id="newsarticles">
 <!-- Eerste column met nieuwsartikelen -->
-                    <a href="#"><div class="row">
+                    <a href="article.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Nieuwstitel</h1>
                         <h2 class="newssubtitle">Hier komt de ondertitel</h2>
@@ -25,7 +25,7 @@
 
                 <div class="divider"></div>
 <!-- tussenruimte voor mooie layout -->
-                <a href="#"><div class="row">
+                <a href="article.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Nieuwstitel</h1>
                         <h2 class="newssubtitle">Hier komt de ondertitel</h2>
@@ -42,7 +42,7 @@
                 
                 <div class="divider"></div>
 
-                <a href="#"><div class="row">
+                <a href="article.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Nieuwstitel</h1>
                         <h2 class="newssubtitle">Hier komt de ondertitel</h2>
@@ -59,7 +59,7 @@
 
                 <div class="divider"></div>
 
-                <a href="#"><div class="row">
+                <a href="article.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Nieuwstitel</h1>
                         <h2 class="newssubtitle">Hier komt de ondertitel</h2>
@@ -76,7 +76,7 @@
 
                 <div class="divider"></div>
 
-                <a href="#"><div class="row">
+                <a href="article.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Nieuwstitel</h1>
                         <h2 class="newssubtitle">Hier komt de ondertitel</h2>
@@ -103,28 +103,28 @@
 
                     <div class="col-1"><p class="articlenr">01</p></div>
                     <div class="col-11">
-                        <a href="#"><p class="articlename">Artikelnaam1</p>
+                        <a href="article.php"><p class="articlename">Artikelnaam1</p>
                         <p class="articlesub">Ondertitel voor het artikel</p>
                         <p class="articledate">01-01-2019</p></a>
                     </div>
 
                     <div class="col-1"><p class="articlenr">02</p></div>
                     <div class="col-11">
-                        <a href="#"><p class="articlename">Artikelnaam2</p>
+                        <a href="article.php"><p class="articlename">Artikelnaam2</p>
                         <p class="articlesub">Ondertitel voor het artikel</p>
                         <p class="articledate">01-01-2019</p></a>
                     </div>
 
                     <div class="col-1"><p class="articlenr">03</p></div>
                     <div class="col-11">
-                        <a href="#"><p class="articlename">Artikelnaam3</p>
+                        <a href="article.php"><p class="articlename">Artikelnaam3</p>
                         <p class="articlesub">Ondertitel voor het artikel</p>
                         <p class="articledate">01-01-2019</p></a>
                     </div>
 
                     <div class="col-1"><p class="articlenr">04</p></div>
                     <div class="col-11">
-                        <a href="#"><p class="articlename">Artikelnaam4</p>
+                        <a href="article.php"><p class="articlename">Artikelnaam4</p>
                         <p class="articlesub">Ondertitel voor het artikel</p>
                         <p class="articledate">01-01-2019</p></a>
                     </div>
