@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -12,4 +13,15 @@
     <link rel="stylesheet" href="../assets/css/style-jh.css">
 </head>
 <body>
-    
+<header class="desktopHeader">
+    <nav>
+        <ul>
+            <a href="http://localhost:8888/zonemap/zoeken"><li ><i class="fas fa-search"></i></li></a>
+            <a href="http://localhost:8888/zonemap/map"><li ><i class="fas fa-map"></i></li></a>
+            <a href="http://localhost:8888/zonemap/profile"><li class="active"><i class="fas fa-user-alt"></i></li></a>
+            <a href="http://localhost:8888/zonemap/nieuws"><li ><i class="fas fa-newspaper"></i></li></a>
+        </ul>
+    </nav> 
+</header>
+<header class="mobileHeader">
+</header>

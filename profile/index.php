@@ -42,6 +42,7 @@
         <button id="register-submit" type="submit" class="btn btn-primary custom-btn">Aanmelden</button>
 
     </div>
+    
 </div>
 
 <?php include('../footer.php') ?>

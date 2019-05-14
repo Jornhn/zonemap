@@ -12,7 +12,9 @@ require_once("config.php");
         }else{
             //-- json encode all buildings for map --
 
-            echo json_encode($db->query("SELECT * FROM building"));
+            $data = $db->query("SELECT * FROM building");
+
+            print_r($data);
             
         }
     }else{
