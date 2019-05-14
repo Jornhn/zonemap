@@ -1,0 +1,63 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* * Zoekfunctie/Zoekbalk */
+.zoekresultaten {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+
+}
+
+.searchbar {
+  float: right;
+  background-color: #ffffff;
+  color: #3E3E3E;
+  padding: 6px 10px;
+  width: 400px;
+  border: none;
+  margin-top: 1px;
+  margin-right: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-bottom: black solid 2px;
+  transition: 0.3s;
+}
+
+.searchbar::placeholder {
+  color: #3E3E3E;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.searchbar:focus {
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: bold;
+  transition: 0.3s;
+  /* Stops the input box from inheriting the styling from the inputs on the request form */
+  border-bottom: black solid 2px;
+  outline: none;
+}
+
+.btn-search {
+  cursor: pointer;
+  color: black;
+  text-decoration: none !important;
+  font-size: 1.5em;
+  padding-top: 5px;
+  margin-right: 40px;
+}
+
+.filter {
+  background-color: #ECF0F1;
+  height: 100vh;
+}
