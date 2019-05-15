@@ -1,5 +1,5 @@
 function saveData(){
-    firebase.database().ref("User/6").set({
+    firebase.database().ref("User/7").set({
         name: document.getElementById('nameField').value,
         age: document.getElementById('ageField').value,
         array: ['eerste item', 'tweede item']
@@ -19,7 +19,20 @@ function getData(){
         // array.forEach(function(arrayData){
         //     console.log(arrayData);
         // })
-    })
+    });
+}
+
+function searchAge(age){
+    firebase.database().ref().child('User/').orderByChild('age').equalTo(age).on("value", function(data) {
+        var searchData = data.val();
+        // console.log(searchData);
+
+        Object.keys(searchData).forEach(function (key){
+            console.log(searchData[key]);
+            // console.log(searchData[key].name);
+        });
+        
+    });
 }
 
 function getOne(id){
