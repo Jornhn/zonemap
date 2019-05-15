@@ -11,10 +11,26 @@ $( document ).ready(function() {
         }
     });
 
+    //onclick "logout" link
     var logoutBtn = document.getElementById('logout-btn');
     logoutBtn.addEventListener('click', function() {
         logout();
     }, false);
+
+    //on enter in form input, try to login
+    var emailInput = document.getElementById('login_email');
+    var passInput = document.getElementById('login_password');
+    emailInput.addEventListener("keydown", function (e) {
+        if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+            login();
+        }
+    });
+    passInput.addEventListener("keydown", function (e) {
+        if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+            login();
+        }
+    });
+
 
 
 });
