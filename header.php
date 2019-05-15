@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/style-jh.css">
 </head>
 <body>
+<div id="login-alert">Je bent ingelogd. <a id="logout-btn" href="#">Uitloggen</a></div>
 <header class="desktopHeader">
     <nav>
         <ul>
@@ -22,6 +23,7 @@
             <a href="http://localhost:8888/zonemap/nieuws"><li ><i class="fas fa-newspaper"></i></li></a>
         </ul>
     </nav> 
+
 </header>
 <header class="mobileHeader">
 </header>
