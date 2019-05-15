@@ -7,10 +7,13 @@ function saveData(){
 }
 
 function getData(){
+    var allData = [];
+
     var user = firebase.database().ref("User/");
     user.on("child_added", function(data){
         var UserValues = data.val();
-        console.log(UserValues);
+        // console.log(UserValues);
+        allData.push(UserValues);
     
 
         //** loop door de array van een array (bijv. alle opleidingen in gebouwen) */
@@ -20,6 +23,8 @@ function getData(){
         //     console.log(arrayData);
         // })
     });
+
+    console.log(allData);
 }
 
 function searchAge(age){
