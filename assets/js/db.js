@@ -129,14 +129,14 @@ function GetLastId(){
     user.limitToLast(1).on("child_added", function(data){
         lastArray = data.val();
         
-        var lastId = lastArray.id;
-        setNewId(Number(lastId));   
+        lastId = lastArray.id;
+        setNewId(lastId);
     });
     // return newId;
-    console.log(setNewId());
+    return setNewId
 }
 
 function setNewId(lastId){
     newId = lastId++;
-    return newId;
+    console.log(newId);
 }
