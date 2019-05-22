@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
     
     var map = L.map('mapContainer').setView([53.2410705, 6.5319427], 15);
 
@@ -10,24 +10,31 @@ $(document).ready(function() {
     //     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     //     // .openPopup();
 
-    var markerdata = {
-        '1' : {
+    var markerdata = [
+        {
             'lat' : '53.2410705',
             'lon' : '6.5319427'
         },
-        '2' : {
+        {
             'lat' : '53.2410705',
-            'lon' : '6.5419427'
+            'lon' : '6.5389427'
+        },
+        {
+            'lat' : '53.2410705',
+            'lon' : '6.5409427'
         }
-    };
+    ];
 
     var arrayLength = markerdata.length;
     for (var i = 0; i < arrayLength; i++) {
-        console.log(markerdata[i]);
-        //Do something
+
+        var lat = markerdata[i]['lat'];
+        var lon = markerdata[i]['lon'];
+
+        L.marker([lat, lon]).addTo(map)
     }
 
-});
+
 
 
 
