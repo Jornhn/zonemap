@@ -8,6 +8,7 @@ $( document ).ready(function() {
         } else {
             console.log("niet ingelogd");
             document.getElementById("login-alert").style.display = "none";
+            // window.location.href = "http://www.w3schools.com";
         }
     });
 
@@ -139,4 +140,40 @@ function GetLastId(){
 function setNewId(lastId){
     newId = lastId++;
     console.log(newId);
+}
+
+function testArray(){
+    var arrayOfLines = $('#educations').val().split('\n');
+
+    if(arrayOfLines[0] == ''){
+        console.log("LEEG!");
+    }else{
+        console.log(arrayOfLines);
+    }  
+}
+
+
+function getLatLong(){
+    var key = "ac6f65d63fb525";
+    var adresName = $("#adres_name").val();
+    var adresNumber = $("#adres_num").val();
+    var adresPostcode = $("#adres_postcode").val();
+
+    var adres = adresName + "/" + adresNumber + "/" + adresPostcode;
+
+    console.log("laden");
+
+    $.get("https://eu1.locationiq.com/v1/search.php?key="+key+"&q="+adres+"&format=json", function(data, status){
+
+        var lat = data[0]['lat'];
+        var lon = data[0]['lon'];
+
+        $("#lat-result").text(lat);
+        $("#long-result").text(lon);
+
+        checkMarkerLocation(lat, lon);
+
+      }).done(function() {
+        console.log("klaar");
+      });;
 }
