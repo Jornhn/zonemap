@@ -21,18 +21,22 @@ $( document ).ready(function() {
     //on enter in form input, try to login
     var emailInput = document.getElementById('login_email');
     var passInput = document.getElementById('login_password');
-    emailInput.addEventListener("keydown", function (e) {
-        if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
-            login();
-        }
-    });
-    passInput.addEventListener("keydown", function (e) {
-        if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
-            login();
-        }
-    });
 
+    if(emailInput){
+        emailInput.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                login();
+            }
+        });
+    }
 
+    if(passInput){
+        passInput.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+                login();
+            }
+        });
+    }
 
 });
 
