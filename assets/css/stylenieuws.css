@@ -1,0 +1,161 @@
+body {
+    width: 100%;
+}
+
+#topspace {
+    height: 80px;
+    text-align: center;
+}
+
+#title {
+    display: none;
+}
+
+.divider {
+    height: 20px;
+}
+
+#newsarticles {
+    margin-left: 10%;
+}
+
+.newstitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #3E3E3E;
+}
+
+.newssubtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.newstext {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+.newsdate {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #AAAAAA;
+    float: left;
+    margin-left: 3%;
+    margin-top: 5px;
+}
+
+.userimgsm {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+}
+
+.userimglg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+}
+
+.articleimage {
+    width: 100%;
+    object-fit: contain;
+    padding-right: 10%;
+}
+
+#features {
+    margin-left: 10%;
+}
+
+#featuretop {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #3E3E3E; 
+}
+
+
+#line {
+    width: 200px;
+    height: 4px;
+    margin-left: 30px;
+    background-color: #2ECC71;
+    margin-bottom: 30px;
+}
+
+.articlenr {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #AFAFAF;
+}
+
+.articlename {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #3E3E3E;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.articlesub {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-bottom: 0px;
+}
+
+.articledate {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #AAAAAA;
+}
+
+@media screen and (max-width: 576px) {
+    #title {
+        display: inline;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        color: #3E3E3E;
+        margin-top: 10px;
+    } 
+    #features {
+      display: none;
+    }
+    .newstitle {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .newssubtitle {
+        font-size: 14px;
+    }
+    .newstext {
+        display: none;
+    }
+    .newsdate {
+        font-size: 12px;
+    }
+    .userimgsm {
+        display: inline;
+        margin-right: 5px;
+    }
+    .userimglg {
+        display: none;
+    }
+  }
+
+  #features {
+      padding-right: 0px;
+  }
