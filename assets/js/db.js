@@ -175,6 +175,8 @@ function getLatLong(){
         $("#lat-result").text(lat);
         $("#long-result").text(lon);
 
+
+        //Creates a preview on the osm map from input data
         checkMarkerLocation(lat, lon);
 
       }).done(function() {

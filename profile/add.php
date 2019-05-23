@@ -27,8 +27,55 @@
     <button onclick="testArray()">Test</button>
 
 
-    
+    <br><hr><br>
 
+</div>
+
+
+
+
+
+<div class="container">
+
+    <br><br>    
+    <h1>Gebouw toevoegen</h1>
+    <hr>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <label for="exampleFormControlInput1">Adres</label>
+        <div class="form-row form-group">
+            <div class="col-8">
+                <input type="text" class="form-control" placeholder="Straat">
+            </div>
+            <div class="col-2">
+                <input type="text" class="form-control" placeholder="Num">
+            </div>
+            <div class="col-2">
+                <input type="text" class="form-control" placeholder="Postcode">
+            </div>
+            <div class="col-12 mt-2">
+                <input type="text" class="form-control" placeholder="Plaats">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Soort gebouw</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option value="" select>-- Maak keuze --</option>
+                <option>Hanze</option>
+                <option>RUG</option>
+                <option>Bedrijf</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Opleidingen</label>
+            <p><i>Meerdere toevoegen? Elke enter (nieuwe regel) is een extra opleiding</i></p>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+    </form>
 </div>
 
 <?php include('../footer.php') ?>
