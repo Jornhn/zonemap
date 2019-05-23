@@ -30,8 +30,8 @@
                 
                 //get page name from url
                 $uri = $_SERVER['REQUEST_URI'];
-                $arr = explode("/", $uri, 4);
-                $page = $arr[2];
+                $arr = explode("/", $uri, 5);
+                $page = $arr[3];
                 
                 //check if page is current
                 if($page == 'zoeken'){ ?>
@@ -45,10 +45,10 @@
                 <?php } ?>
 
 
-                <a href='http://localhost:8888/zonemap/zoeken'><li class="<?= $search ?>"><i class='fas fa-search'></i></li></a>
-                <a href='http://localhost:8888/zonemap/map'><li class="<?= $map ?>"><i class='fas fa-map'></i></li></a>
-                <a href='http://localhost:8888/zonemap/profile'><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i></li></a>
-                <a href='http://localhost:8888/zonemap/nieuws'><li class="<?= $news ?>"><i class='fas fa-newspaper'></i></li></a>
+                <a href='http://localhost:8888/Zonemap/application/zoeken'><li class="<?= $search ?>"><i class='fas fa-search'></i></li></a>
+                <a href='http://localhost:8888/Zonemap/application/map'><li class="<?= $map ?>"><i class='fas fa-map'></i></li></a>
+                <a href='http://localhost:8888/Zonemap/application/profile'><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i></li></a>
+                <a href='http://localhost:8888/Zonemap/application/nieuws'><li class="<?= $news ?>"><i class='fas fa-newspaper'></i></li></a>
             </ul>
         </nav> 
 
