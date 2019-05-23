@@ -14,7 +14,45 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">  
         <link href="../assets/css/stylenieuws.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/style-jh.css">
+        <link rel="stylesheet" href="../assets/css/style-wv.css">
         <!-- Stylesheet/bootstrap, google fonts -->
     </head>
     <body>
+    <div id="login-alert">Je bent ingelogd. <a id="logout-btn" href="#">Uitloggen</a></div>
+    <header class="desktopHeader">
+        <nav>
+            <ul>    
+                <?php
+                $search     = "";
+                $map        = "";
+                $profile    = "";
+                $news       = "";
+                
+                //get page name from url
+                $uri = $_SERVER['REQUEST_URI'];
+                $arr = explode("/", $uri, 4);
+                $page = $arr[2];
+                
+                //check if page is current
+                if($page == 'zoeken'){ ?>
+                    <?php $search = "active"; ?> 
+                <?php }elseif($page == 'map'){ ?>
+                    <?php $map = "active"; ?>
+                <?php }elseif($page == 'profile'){ ?>
+                    <?php $profile = "active"; ?>
+                <?php }elseif($page == 'nieuws'){ ?>
+                    <?php $news = "active"; ?>
+                <?php } ?>
+
+
+                <a href='http://localhost:8888/zonemap/zoeken'><li class="<?= $search ?>"><i class='fas fa-search'></i></li></a>
+                <a href='http://localhost:8888/zonemap/map'><li class="<?= $map ?>"><i class='fas fa-map'></i></li></a>
+                <a href='http://localhost:8888/zonemap/profile'><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i></li></a>
+                <a href='http://localhost:8888/zonemap/nieuws'><li class="<?= $news ?>"><i class='fas fa-newspaper'></i></li></a>
+            </ul>
+        </nav> 
+
+    </header>
+    <header class="mobileHeader">
+    </header>
     

@@ -1,42 +1,73 @@
 <?php include('../header.php') ?>
 
-<!-- HTML CODE HIER... -->
-<!-- In header.php de style linkjes plakken en in footer.php de javascript links plakken -->
-<!doctype html>
-<html lang="en">
+<div class="row">
+    <!-- Filterfunctie -->
+    <!-- https://codepen.io/WouterVrijs/pen/VOKOxE  -->
+    <div class="col-sm-3 filter">
+      <div class="filtercontainer">
+        <h3>Voorzieningen</h3>
+        <ul>
+          <li>Toiletten</li>
+          <li>Eetvoorziening</li>
+        </ul>
+        <h3>Opleidingen</h3>
+        <ul>
+          <li>Communication & Multimedia Design</li>
+          <li>Bedrijfskunde</li>
+        </ul>
+      </div>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- <div id="myBtnContainer">
+        <form class="" action="index.html" method="post">
 
-  <title>Zoeken</title>
-</head>
+        </form>
 
-<body>
-  <!--Searchform moet linken naar resultaten -->
-  <form class="Searchform" action="index.html" method="post">
-    <div class="md-form active-pink active-pink-2 mb-3 mt-0">
-      <input class="form-control" type="text" placeholder="Zoeken" aria-label="Search">
+        <a>Gesorteerd op:</a><a href="#">afstand</a><br>
+        <button class="btn active" onclick="filterSelection('all')"> Laat alles zien</button>
+
+        <h3>Voorzieningen</h3>
+        <button class="btn" onclick="filterSelection('cars')"> Toiletten</button>
+        <button class="btn" onclick="filterSelection('animals')"> Eetvoorzieningen</button>
+
+        <h3>Opleidingen</h3>
+        <button class="btn" onclick="filterSelection('fruits')"> Communicatie & Multimedia Design</button>
+        <button class="btn" onclick="filterSelection('colors')"> Bedrijfskunde</button>-->
     </div>
 
-    <div class="col-7">
-      <input type="text" class="form-control" placeholder="City">
+
+    <!--    -->
+    <div class="col-sm-8">
+      <!-- Searchbox -->
+      <div class="zoekbalk">
+        <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike...">
+        <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
+      </div>
+
+      <!-- Filterresultaten  -->
+
+      <div class="filterresultaten">
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Doorenveste.jpg" alt="Van Doorenveste">
+          <div class="overlay">
+            <h3>Van Doorenveste</h3>
+            <span class="adres">Zernike Plein 11</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van Doorenveste">
+          <div class="overlay">
+            <h3>Van OlstToren</h3>
+            <span class="adres">Zernike Plein 9
+          </div>
+        </div>
+      </div>
+
     </div>
 
-  </form>
+  </div>
+  </div>
 
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-
-</html>
 <?php include('../footer.php') ?>
