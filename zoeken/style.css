@@ -1,7 +1,7 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -9,11 +9,10 @@ html {
 }
 
 /* * Zoekfunctie/Zoekbalk */
-.zoekresultaten {
+.zoekbalk {
   display: flex;
   flex-direction: row;
   padding-top: 50px;
-
 }
 
 .searchbar {
@@ -21,14 +20,14 @@ html {
   background-color: #ffffff;
   color: #3E3E3E;
   padding: 6px 10px;
-  width: 400px;
+  width: 380px;
   border: none;
+  margin-left: 20px;
   margin-top: 1px;
-  margin-right: 8px;
   font-size: 1.25em;
   font-weight: bold;
   border-bottom: black solid 2px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .searchbar::placeholder {
@@ -51,7 +50,6 @@ html {
 .btn-search {
   cursor: pointer;
   color: black;
-  text-decoration: none !important;
   font-size: 1.5em;
   padding-top: 5px;
   margin-right: 40px;
@@ -60,4 +58,70 @@ html {
 .filter {
   background-color: #ECF0F1;
   height: 100vh;
+}
+
+/* Filter Zoekfunctie */
+/* Button Styling */
+li {
+  list-style-type: none;
+}
+
+.btn {
+  border: none;
+  max-width: 250px;
+}
+
+h3 {
+  font-weight: 700;
+
+}
+
+/* Filter resultaten */
+.filterresultaten {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+.overlay > h3 {
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.gebouw {
+  position: relative;
+}
+
+.zoekafbeelding {
+  position: relative;
+  max-width: 450px;
+  max-height: 228px;
+  padding: 20px;
+  border-radius: 0px 0px 30px 30px;
+}
+
+/* h3 {
+  position: absolute;
+  bottom: 25px;
+  left: 60px;
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+} */
+
+.adres {
+  font-weight: 600;
+  font-size: 15px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
