@@ -6,36 +6,51 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // L.marker([53.2410705, 6.5319427]).addTo(map)
-    //     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    //     // .openPopup();
-
+    // (!BEGIN!) VOOR DE MAP PAGINA //
     var markerdata = [
         {
+            'id' : '1',
             'lat' : '53.2410705',
             'lon' : '6.5319427'
         },
         {
+            'id' : '2',
             'lat' : '53.2410705',
             'lon' : '6.5389427'
         },
         {
+            'id' : '3',
             'lat' : '53.2410705',
             'lon' : '6.5409427'
         }
     ];
 
+    var markers = {};
     var arrayLength = markerdata.length;
     for (var i = 0; i < arrayLength; i++) {
 
-        var lat = markerdata[i]['lat'];
-        var lon = markerdata[i]['lon'];
+        var building = markerdata[i];
 
-        L.marker([lat, lon]).addTo(map)
+        var lat = building.lat;
+        var lon = building.lon;
+
+        markers[building.id] = L.marker([lat, lon]).addTo(map);
+        markers[building.id]._icon.id = building.id;
     }
 
+    $('.leaflet-marker-icon').on('click', function(e){
+
+        var el = $(e.srcElement || e.target),
+            id = el.attr('id');
+        
+        fillBuildingData(id);
+    });
+    // (!EIND!) VOOR DE MAP PAGINA //
 
 
+function fillBuildingData(id){
+    console.log("Marker ID: "+ id);
+}
 
 
 function checkMarkerLocation(lat, lon){
