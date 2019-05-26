@@ -1,55 +1,47 @@
 
     
-    var map = L.map('mapContainer').setView([53.2410705, 6.5319427], 15);
+    var map = L.map('main-map').setView([53.2410705, 6.5319427], 15);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-
-    $('.leaflet-marker-icon').on('click', function(e){
+    
+    $('#main-map').on('click', '.leaflet-marker-icon', function(e){
 
         var el = $(e.srcElement || e.target),
             id = el.attr('id');
         
         fillBuildingData(id);
+
+        console.log("geklikt");
     });
 
-    var markerdata = [
-        {
-            'id' : '1',
-            'lat' : '53.2410705',
-            'lon' : '6.5319427'
-        },
-        {
-            'id' : '2',
-            'lat' : '53.2410705',
-            'lon' : '6.5389427'
-        },
-        {
-            'id' : '3',
-            'lat' : '53.2410705',
-            'lon' : '6.5409427'
-        }
-    ];
-
-    
 
 function fillMap(){
     var markers = {};
-    var arrayLength = markerdata.length;
-    for (var i = 0; i < arrayLength; i++) {
 
-        var building = markerdata[i];
+    var building = firebase.database().ref("Buildings/");
+    building.on("child_added", function(data){
+        var building_data = data.val();
+        
+        console.log(building_data);
 
-        var lat = building.lat;
-        var lon = building.lon;
+        markers[building_data.id] = L.marker(building_data.latLong).addTo(map);
+        markers[building_data.id]._icon.id = building_data.id;
+    
+    });
 
-        markers[building.id] = L.marker([lat, lon]).addTo(map);
-        markers[building.id]._icon.id = building.id;
-    }
+    // TODO: FIX LOADING MAP UNTIL MAP IS FILLED WITH MARKERS...
+    $('#main-map').css("opacity", "1");
 }
-fillMap();
+
+$( document ).ready(function() { 
+    fillMap(); 
+
+
+
+});
 
 
 function fillBuildingData(id){

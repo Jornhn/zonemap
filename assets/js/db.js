@@ -87,36 +87,45 @@ function saveData(){
 
 function saveBuilding(){
 
-    var input_name = "";
-    var input_adres = "";
-    var input_latLong = LatLongArr;
+    var input_name = $('#building_name').val();
+
+        var adres_name = $('#adres_name').val();
+        var adres_number = $('#adres_num').val();
+        var adres_zipcode = $('#adres_postcode').val();
+        var adres_place = $('#adres_plaats').val();
+
+    var input_adres = {
+        'name' : adres_name+" "+adres_number,
+        'zipcode' : adres_zipcode,
+        'place' : adres_place
+    };
+    
+        var input_lat = $('#building_lat').val();
+        var input_lon = $('#building_lon').val();
+    var input_latLong = [input_lat, input_lon];
+
+    var input_function  = $('#function_building').val();
 
     var input_educations = $('#educations').val().split('\n');
     var input_facilities = $('#facilities').val().split('\n');
-    
-    
-    if(input_educations[0] == '' || input_facilities[0] == ''){
-        console.log("LEEG!");
-    }else{
-        // Toevoegen!
-        console.log(input_educations);
-    }  
-
-    console.log(input_name);
-    console.log(input_adres);
-    console.log(input_latLong);
-    console.log(input_educations);
-    console.log(input_facilities);
 
     //save to database
-
-    // firebase.database().ref("Buildings/").set({
-    //     name: input_name,
-    //     adres: input_adres,
-    //     latLong: input_latLong,
-    //     education: input_educations,
-    //     facilities: input_facilities,
-    // });
+    created_id = Date.now();
+    firebase.database().ref("Buildings/"+created_id).set({
+        id: created_id,
+        name: input_name,
+        adres: input_adres,
+        function: input_function,
+        latLong: input_latLong,
+        education: input_educations,
+        facilities: input_facilities,
+    }, function(error) {
+        if (error) {
+          alert("error!"+error);
+        } else {
+          alert("gelukt!");
+        }
+    });
 }
 
 function getData(){
@@ -190,7 +199,7 @@ function testArray(){
     }  
 }
 
-var LatLongArr = [];
+
 function getLatLong(){
     var key = "ac6f65d63fb525";
     var adresName = $("#adres_name").val();
@@ -209,9 +218,8 @@ function getLatLong(){
         $("#lat-result").text(lat);
         $("#long-result").text(lon);
 
-        // Create array from lat and long
-        LatLong = [lat, lon];
-
+        $("#building_lat").val(lat);
+        $("#building_lon").val(lon);
 
         //Creates a preview on the osm map from input data
         checkMarkerLocation(lat, lon);
