@@ -1,6 +1,6 @@
 
     
-    var map = L.map('main-map').setView([53.2410705, 6.5319427], 15);
+    var map = L.map('main-map').setView([53.2400705, 6.5343427], 16);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -12,9 +12,8 @@
         var el = $(e.srcElement || e.target),
             id = el.attr('id');
         
-        fillBuildingData(id);
-
-        console.log("geklikt");
+        // fillBuildingData(id);
+        getOne(id);
     });
 
 

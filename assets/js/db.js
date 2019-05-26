@@ -134,7 +134,6 @@ function getData(){
     var user = firebase.database().ref("User/");
     user.on("child_added", function(data){
         var UserValues = data.val();
-        // console.log(UserValues);
         allData.push(UserValues);
     
 
@@ -163,30 +162,12 @@ function searchAge(age){
 }
 
 function getOne(id){
-    var user = firebase.database().ref("User/"+id);
+    var user = firebase.database().ref("Buildings/"+id);
     user.on("value", function(data){
         var UserValue = data.val();
         console.log(UserValue.name);
-        console.log(UserValue.age);
+        console.log(UserValue.function);
     })
-}
-
-
-function GetLastId(){
-    var user = firebase.database().ref("User/");
-    user.limitToLast(1).on("child_added", function(data){
-        lastArray = data.val();
-        
-        lastId = lastArray.id;
-        setNewId(lastId);
-    });
-    // return newId;
-    return setNewId
-}
-
-function setNewId(lastId){
-    newId = lastId++;
-    console.log(newId);
 }
 
 function testArray(){
@@ -204,9 +185,8 @@ function getLatLong(){
     var key = "ac6f65d63fb525";
     var adresName = $("#adres_name").val();
     var adresNumber = $("#adres_num").val();
-    var adresPostcode = $("#adres_postcode").val();
 
-    var adres = adresName + "/" + adresNumber + "/" + adresPostcode;
+    var adres = adresName + "/" + adresNumber;
 
     console.log("laden");
 
