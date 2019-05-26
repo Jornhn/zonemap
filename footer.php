@@ -27,6 +27,7 @@
 
     <script src="../assets/js/db.js"></script>
     <script src="../assets/js/osm.js"></script>
+    <script src="../assets/js/profile.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 </html>

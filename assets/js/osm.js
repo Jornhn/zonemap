@@ -6,7 +6,15 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // (!BEGIN!) VOOR DE MAP PAGINA //
+
+    $('.leaflet-marker-icon').on('click', function(e){
+
+        var el = $(e.srcElement || e.target),
+            id = el.attr('id');
+        
+        fillBuildingData(id);
+    });
+
     var markerdata = [
         {
             'id' : '1',
@@ -25,6 +33,9 @@
         }
     ];
 
+    
+
+function fillMap(){
     var markers = {};
     var arrayLength = markerdata.length;
     for (var i = 0; i < arrayLength; i++) {
@@ -37,30 +48,25 @@
         markers[building.id] = L.marker([lat, lon]).addTo(map);
         markers[building.id]._icon.id = building.id;
     }
-
-    $('.leaflet-marker-icon').on('click', function(e){
-
-        var el = $(e.srcElement || e.target),
-            id = el.attr('id');
-        
-        fillBuildingData(id);
-    });
-    // (!EIND!) VOOR DE MAP PAGINA //
+}
+fillMap();
 
 
 function fillBuildingData(id){
     console.log("Marker ID: "+ id);
 }
 
-
+var lastmarker = {};
 function checkMarkerLocation(lat, lon){
     //set location to new added marker
-    changeLocation(lat, lon);
+    checkMarkerMap.setView(new L.LatLng(lat, lon), 15);
+    $('#marker-location-map').show();
+    
+    //remove last marker, while checking input location
+    if (lastmarker != undefined) {
+        checkMarkerMap.removeLayer(lastmarker);
+    };
 
     // add marker to the map
-    return L.marker([lat, lon]).addTo(map)
-}
-
-function changeLocation(lat, lon){
-    return map.setView(new L.LatLng(lat, lon), 15);
+    return lastmarker = L.marker([lat, lon]).addTo(checkMarkerMap);
 }
