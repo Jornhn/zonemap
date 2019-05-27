@@ -16,6 +16,20 @@ $('#main-map').on('click', '.leaflet-marker-icon', function(e){
     getOne(id);
 });
 
+var LeafIcon = L.Icon.extend({
+    options: {
+        iconSize:     [38, 38],
+        shadowSize:   [50, 64],
+        iconAnchor:   [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor:  [-3, -76]
+    }
+});
+
+var blackIcon = new LeafIcon({iconUrl: '../assets/images/marker_black.png'}),
+    redIcon = new LeafIcon({iconUrl: '../assets/images/marker_red.png'}),
+    yellowIcon = new LeafIcon({iconUrl: '../assets/images/marker_yellow.png'});
+
 
 function fillMap(){
     var markers = {};
@@ -23,11 +37,24 @@ function fillMap(){
     var building = firebase.database().ref("Buildings/");
     building.on("child_added", function(data){
         var building_data = data.val();
-        
-        // console.log(building_data);
 
         markers[building_data.id] = L.marker(building_data.latLong).addTo(map);
         markers[building_data.id]._icon.id = building_data.id;
+        
+        // Custom color for every differend type of building
+
+        // if(building_data.function == 'Hanze'){
+        //     markers[building_data.id] = L.marker(building_data.latLong, {icon: yellowIcon}).addTo(map);
+        //     markers[building_data.id]._icon.id = building_data.id;
+        // }else if(building_data.function == "RUG"){
+        //     markers[building_data.id] = L.marker(building_data.latLong, {icon: redIcon}).addTo(map);
+        //     markers[building_data.id]._icon.id = building_data.id;
+        // }else{
+        //     markers[building_data.id] = L.marker(building_data.latLong, {icon: blackIcon}).addTo(map);
+        //     markers[building_data.id]._icon.id = building_data.id;
+        // }
+
+        
     
     });
 
