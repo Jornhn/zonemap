@@ -24,7 +24,7 @@ function fillMap(){
     building.on("child_added", function(data){
         var building_data = data.val();
         
-        console.log(building_data);
+        // console.log(building_data);
 
         markers[building_data.id] = L.marker(building_data.latLong).addTo(map);
         markers[building_data.id]._icon.id = building_data.id;
@@ -37,8 +37,6 @@ function fillMap(){
 
 $( document ).ready(function() { 
     fillMap(); 
-
-
 
 });
 

@@ -3,13 +3,19 @@ $( document ).ready(function() {
     
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            console.log("ingelogd");
-            document.getElementById("login-alert").style.display = "block";  
+            $('.pf-uid').html("<b>User UID:</b> "+user.uid);
+            $('.pf-email').html("<b>User Email:</b> "+user.email);
+
+            $('.profile-container').hide();
+            $('.admin-panel').show();
         } else {
+            $('.profile-container').show();
+            $('.admin-panel').hide();
+
             console.log("niet ingelogd");
-            document.getElementById("login-alert").style.display = "none";
-            // window.location.href = "http://www.w3schools.com";
         }
+
+        console.log("geladen");
     });
 
     //onclick "logout" link
@@ -111,6 +117,7 @@ function saveBuilding(){
 
     //save to database
     created_id = Date.now();
+
     firebase.database().ref("Buildings/"+created_id).set({
         id: created_id,
         name: input_name,
@@ -162,11 +169,10 @@ function searchAge(age){
 }
 
 function getOne(id){
-    var user = firebase.database().ref("Buildings/"+id);
-    user.on("value", function(data){
-        var UserValue = data.val();
-        console.log(UserValue.name);
-        console.log(UserValue.function);
+    var buildingId = firebase.database().ref("Buildings/"+id);
+    buildingId.on("value", function(data){
+        var buildingValue = data.val();
+        console.log(buildingValue);
     })
 }
 
