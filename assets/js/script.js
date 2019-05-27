@@ -22,7 +22,12 @@ $(document).ready(function() {
         $('#login').hide();
     
       }
+
     });
+
+
+    
+
 
     // $('.custom-btn').click(function(e) {
 

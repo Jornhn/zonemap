@@ -7,8 +7,8 @@
    crossorigin=""></script>
     
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
 
     <script>
         // Your web app's Firebase configuration
@@ -25,9 +25,23 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
+    <?php 
+        $uri = $_SERVER['REQUEST_URI'];
+        $arr = explode("/", $uri, 4);
+        $page = $arr[2];
+    ?>
+
     <script src="../assets/js/db.js"></script>
-    <script src="../assets/js/osm.js"></script>
-    <script src="../assets/js/profile.js"></script>
+
+    <?php if($page == 'map'){ ?>
+        <script src="../assets/js/osm.js"></script>
+    <?php } ?>
+
     <script src="../assets/js/script.js"></script>
+    
+    <?php if($page == 'profile'){ ?> 
+        <script src="../assets/js/profile.js"></script> 
+    <?php } ?>
+
 </body>
 </html>

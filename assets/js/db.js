@@ -8,14 +8,15 @@ $( document ).ready(function() {
 
             $('.profile-container').hide();
             $('.admin-panel').show();
+            console.log("- LOGGEDIN -");
         } else {
             $('.profile-container').show();
             $('.admin-panel').hide();
 
-            console.log("niet ingelogd");
+            console.log("- NOT LOGGEDIN - ");
         }
 
-        console.log("geladen");
+        // console.log("geladen");
     });
 
     //onclick "logout" link
@@ -191,8 +192,9 @@ function getLatLong(){
     var key = "ac6f65d63fb525";
     var adresName = $("#adres_name").val();
     var adresNumber = $("#adres_num").val();
+    var adresPlace = $("#adres_plaats").val();
 
-    var adres = adresName + "/" + adresNumber;
+    var adres = adresName + "/" + adresNumber+" "+adresPlace;
 
     console.log("laden");
 

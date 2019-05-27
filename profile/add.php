@@ -6,7 +6,7 @@
     <h1>Gebouw toevoegen</h1>
     <hr>
 
-    <form>
+    <form id="add_building_form">
         <div class="form-group">
             <label for="exampleFormControlInput1"><b>Naam</b></label>
             <input type="text" class="form-control" id="building_name">

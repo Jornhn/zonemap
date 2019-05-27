@@ -24,6 +24,7 @@
 
     <div id="register">
     <h1>Registeren</h1>
+    <button type="submit" onclick="window.location = 'https://www.facebook.com';" class="btn btn-default fb-btn" style="margin-top: 5px !important; margin-bottom: 20px;"><i class="fab fa-facebook-square"></i> Snel met Facebook</button>
         <div class="form-group">
             <input type="text" class="form-control" id="register_name" placeholder="Naam">
         </div>
@@ -37,7 +38,7 @@
             <input type="password" class="form-control" id="register_password" placeholder="Wachtwoord">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="register_password" placeholder="Wachtwoord herhalen">
+            <input type="password" class="form-control" id="register_password_confirm" placeholder="Wachtwoord herhalen">
         </div>
         <button id="register-submit" type="submit" class="btn btn-primary custom-btn">Aanmelden</button>
 
