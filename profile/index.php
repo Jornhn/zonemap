@@ -19,12 +19,12 @@
 
         <a id="pass-forget" href="">Wachtwoord vergeten</a>
 
-        <button type="submit" onclick="window.location = 'https://www.facebook.com';" class="btn btn-default fb-btn"><i class="fab fa-facebook-square"></i> Login met Facebook</button>
+        <button type="submit" onclick="googleLogin()" class="btn btn-default fb-btn"><i class="fab fa-google"></i> Login met Google</button>
     </div>
 
     <div id="register">
     <h1>Registeren</h1>
-    <button type="submit" onclick="window.location = 'https://www.facebook.com';" class="btn btn-default fb-btn" style="margin-top: 5px !important; margin-bottom: 20px;"><i class="fab fa-facebook-square"></i> Snel met Facebook</button>
+    <button type="submit" onclick="googleLogin()" class="btn btn-default fb-btn" style="margin-top: 5px !important; margin-bottom: 20px;"><i class="fab fa-google"></i> Snel met Google</button>
         <div class="form-group">
             <input type="text" class="form-control" id="register_name" placeholder="Naam">
         </div>
