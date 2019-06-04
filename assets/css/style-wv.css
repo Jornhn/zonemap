@@ -1,18 +1,19 @@
 body {
     font-family: 'Raleway', sans-serif;
   }
-  
+
   html {
     overflow-x: hidden;
   }
-  
+
   /* * Zoekfunctie/Zoekbalk */
+
   .zoekbalk {
     display: flex;
     flex-direction: row;
     padding-top: 50px;
   }
-  
+
   .searchbar {
     float: right;
     background-color: #ffffff;
@@ -27,14 +28,14 @@ body {
     border-bottom: black solid 2px;
     transition: 0.4s;
   }
-  
+
   .searchbar::placeholder {
     color: #3E3E3E;
     font-size: 1em;
     font-weight: bold;
     transition: 0.2s;
   }
-  
+
   .searchbar:focus {
     width: 100%;
     font-size: 1.25em;
@@ -44,7 +45,7 @@ body {
     border-bottom: black solid 2px;
     outline: none;
   }
-  
+
   .btn-search {
     cursor: pointer;
     color: black;
@@ -52,75 +53,103 @@ body {
     padding-top: 5px;
     margin-right: 40px;
   }
-  
+
   .filter {
     background-color: #ECF0F1;
     height: 100vh;
   }
-  
+
   /* Filter Zoekfunctie */
-  /* Button Styling */
-  li {
+  .filtercontainer {
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  .filterlist {
     list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #B2B2B2;
+    line-height: 24px;
+    margin-bottom: 5px;
   }
-  
-  .btn {
-    border: none;
-    max-width: 250px;
+
+.sort {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #B2B2B2;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+  .h3-filter {
+    font-weight: 800;
+    font-size: 23px;
+    color: #222222;
   }
-  
-  h3 {
-    font-weight: 700;
-  
-  }
-  
+
+.voorzieningen {
+  padding-bottom: 15px;
+}
+
+.form-check {
+  padding-left: 50px;
+}
+
+.form-check-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #B2B2B2;
+  line-height: 24px;
+}
+
+/* Dropdown menu */
+#dropdownMenuButton {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #B2B2B2;
+  border: none;
+}
+
+
+
   /* Filter resultaten */
   .filterresultaten {
     display: flex;
-    position: fixed;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  
+
   .overlay {
     position: absolute;
     bottom: 20px;
     left: 40px;
   }
-  
+
   .overlay > h3 {
     font-weight: 800;
     font-size: 25px;
     text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
     color: #ffffff;
   }
-  
+
   .gebouw {
     position: relative;
   }
-  
+
   .zoekafbeelding {
     position: relative;
-    max-width: 450px;
+    width: 450px;
     max-height: 228px;
     padding: 20px;
     border-radius: 0px 0px 30px 30px;
   }
-  
-  /* h3 {
-    position: absolute;
-    bottom: 25px;
-    left: 60px;
-    font-weight: 800;
-    font-size: 25px;
-    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-  } */
-  
+
   .adres {
     font-weight: 600;
     font-size: 15px;
     text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
     color: #ffffff;
   }
-  
