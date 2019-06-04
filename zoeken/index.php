@@ -2,14 +2,14 @@
 
 <div class="row">
     <!-- Filterfunctie -->
-    <div class="col-sm-3 filter"></div>
-    <div class="col-sm-3 filter position-fixed">
+    <!-- <div class="col-sm-3 filter"></div> -->
+    <div class="col-sm-3 filter">
       <div class="filtercontainer">
 
         <p class="sort">Gesorteerd op:  <a class="sort" href="#">Afstand</a>/<a class="sort" href="#">Naam</a></p>
 
         <h3 class="h3-filter">Faciliteiten</h3>
-          <div class="voorzieningen">
+          <div class="faciliteiten">
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Toiletten</label>
@@ -20,50 +20,7 @@
             </div>
           </div>
 
-        <h3 class="h3-filter">Opleidingen</h3>
-          <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Opleidingen
-              </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Academisch Opleiding Leraar Basisonderwijs </a>
-              <a class="dropdown-item" href="#">Accountancy</a>
-              <a class="dropdown-item" href="#">Advanced Nursing Practice</a>
-              <a class="dropdown-item" href="#">Archictectuur | Academie van Bouwkunst</a>
-              <a class="dropdown-item" href="#">Automotive</a>
-              <a class="dropdown-item" href="#">Autonome Beeldende Kunst</a>
-              <a class="dropdown-item" href="#">Bedrijfskunde</a>
-              <a class="dropdown-item" href="#">Bio-Informatica</a>
-              <a class="dropdown-item" href="#">Biologische en Medische Research</a>
-              <a class="dropdown-item" href="#">Built Environment</a>
-              <a class="dropdown-item" href="#">Chemie</a>
-              <a class="dropdown-item" href="#">Chemische Technologie</a>
-              <a class="dropdown-item" href="#">Classical Music</a>
-              <a class="dropdown-item" href="#">Commerciële Economie</a>
-              <a class="dropdown-item" href="#">Communicatie</a>
-              <a class="dropdown-item" href="#">Communication & Multimedia Design</a>
-              <a class="dropdown-item" href="#">Compositie, Muziek- en Studioproducties</a>
-              <a class="dropdown-item" href="#">Dans</a>
-              <a class="dropdown-item" href="#">Data Science for Life Sciences</a>
-              <a class="dropdown-item" href="#">Dirigent HaFaBra en Koor</a>
-              <a class="dropdown-item" href="#">Docent Beeldende Kunst & Vormgeving</a>
-              <a class="dropdown-item" href="#">Docent Dans</a>
-              <a class="dropdown-item" href="#">Docent Muziek</a>
-              <a class="dropdown-item" href="#">Elektrotechniek</a>
-              <a class="dropdown-item" href="#">Energy for Society</a>
-              <a class="dropdown-item" href="#">Ervaringsdeskundigheid in Zorg en Welzijn</a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-            </div>
-          </div>
-
+<!-- Gebouw functie  -->
 
         <h3 class="h3-filter">Functie Gebouw</h3>
         <div class="functie-gebouw">
@@ -89,11 +46,126 @@
           </div>
         </div>
 
+<!-- Opleidingen Hanze  -->
+
+        <h3 class="h3-filter">Opleidingen Hanze</h3>
+          <div class="hanze-opleidingen">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Communicatie, Media en Vormgeving</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Economie en Marketing</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Energie</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Gezondheidszorg</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Healthy Ageing</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">ICT</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Kunst</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Mens en Maatschappij</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Natuurwetenschappen</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Ondernemerschap</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Onderwijs</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Rechten</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Sport</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Techniek</label>
+            </div>
+          </div>
+
+<!-- Opleidingen RuG  -->
+
+          <h3 class="h3-filter">Opleidingen RuG</h3>
+            <div class="rug-opleidingen">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Economie, Bedrijf en Omgeving</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Gedrag en Maatschappij</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Geschiedenis en Internationale Betrekkingen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Gezondheid en Leven</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Kunst, Cultuur en Archeologie</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Natuur en Technologie</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Rechten</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Religie en Cultuur</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Talen en Culturen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Taal en Communicatie</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Filosofie</label>
+              </div>
+            </div>
+
+
+
+
     </div>
 </div>
 
     <!--    -->
-    <div class="col-sm-9" style="z-index:-9999">
+    <div class="col-sm-9">
       <!-- Searchbox -->
       <div class="zoekbalk">
         <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike...">
@@ -105,11 +177,12 @@
       <div class="filterresultaten">
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Doorenveste.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van Doorenveste</h3>
             <span class="adres">Zernike Plein 11</span>
           </div>
+          <div class="hover-black"></div>
+          <img class="zoekafbeelding" src="images/Doorenveste.jpg" alt="Van Doorenveste">
         </div>
 
         <div class="gebouw">

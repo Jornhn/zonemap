@@ -1,78 +1,77 @@
 body {
-    font-family: 'Raleway', sans-serif;
-  }
+  font-family: 'Raleway', sans-serif;
+}
 
-  html {
-    overflow-x: hidden;
-  }
+html {
+  overflow-x: hidden;
+}
 
-  /* * Zoekfunctie/Zoekbalk */
+/* * Zoekfunctie/Zoekbalk */
+.zoekbalk {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
 
-  .zoekbalk {
-    display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-  }
+.searchbar {
+  float: right;
+  background-color: #ffffff;
+  color: #222222;
+  padding: 6px 10px;
+  width: 420px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 1px;
+  font-size: 20px;
+  font-weight: 800;
+  border-bottom: black solid 2px;
+  transition: 0.4s;
+}
 
-  .searchbar {
-    float: right;
-    background-color: #ffffff;
-    color: #3E3E3E;
-    padding: 6px 10px;
-    width: 380px;
-    border: none;
-    margin-left: 20px;
-    margin-top: 1px;
-    font-size: 1.25em;
-    font-weight: bold;
-    border-bottom: black solid 2px;
-    transition: 0.4s;
-  }
+.searchbar::placeholder {
+  color: #222222;
+  font-size: 23px;
+  font-weight: 800;
+  transition: 0.2s;
+}
 
-  .searchbar::placeholder {
-    color: #3E3E3E;
-    font-size: 1em;
-    font-weight: bold;
-    transition: 0.2s;
-  }
+.searchbar:focus {
+  width: 100%;
+  font-size: 23px;
+  font-weight: 800;
+  transition: 0.3s;
+  /* Stops the input box from inheriting the styling from the inputs on the request form */
+  border-bottom: black solid 2px;
+  outline: none;
+}
 
-  .searchbar:focus {
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: bold;
-    transition: 0.3s;
-    /* Stops the input box from inheriting the styling from the inputs on the request form */
-    border-bottom: black solid 2px;
-    outline: none;
-  }
+.btn-search {
+  cursor: pointer;
+  color: black;
+  font-size: 1.5em;
+  padding-top: 5px;
+  margin-right: 40px;
+}
 
-  .btn-search {
-    cursor: pointer;
-    color: black;
-    font-size: 1.5em;
-    padding-top: 5px;
-    margin-right: 40px;
-  }
+.filter {
+  background-color: #ECF0F1;
+}
 
-  .filter {
-    background-color: #ECF0F1;
-    height: 100vh;
-  }
+/* Filter Zoekfunctie */
+.filtercontainer {
+  margin-top: 50px;
+  padding: 15px;
+}
 
-  /* Filter Zoekfunctie */
-  .filtercontainer {
-    margin-top: 50px;
-    padding: 15px;
-  }
-
-  .filterlist {
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 15px;
-    color: #B2B2B2;
-    line-height: 24px;
-    margin-bottom: 5px;
-  }
+.filterlist {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #B2B2B2;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
 
 .sort {
   list-style-type: none;
@@ -83,18 +82,30 @@ body {
   margin-bottom: 20px;
 }
 
-  .h3-filter {
-    font-weight: 800;
-    font-size: 23px;
-    color: #222222;
-  }
+.h3-filter {
+  font-weight: 800;
+  font-size: 23px;
+  color: #222222;
+}
 
-.voorzieningen {
+.faciliteiten {
   padding-bottom: 15px;
 }
 
 .form-check {
   padding-left: 50px;
+}
+
+.functie-gebouw {
+  margin-bottom: 15px;
+}
+
+.hanze-opleidingen {
+  margin-bottom: 15px;
+}
+
+.rug-opleidingen {
+  margin-bottom: 15px;
 }
 
 .form-check-label {
@@ -113,50 +124,64 @@ body {
   border: none;
 }
 
+/* Filter resultaten */
+.filterresultaten {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  z-index: 1;
+}
 
-  /* Filter resultaten */
-  .filterresultaten {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+.overlay>h3 {
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
 
-  .overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-  }
+.gebouw {
+  position: relative;
+}
 
-  .overlay > h3 {
-    font-weight: 800;
-    font-size: 25px;
-    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-  }
+.zoekafbeelding {
+  position: relative;
+  width: 450px;
+  height: 228px;
+  margin: 20px;
+  border-radius: 0px 0px 30px 30px;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
 
-  .gebouw {
-    position: relative;
-  }
+.hover-black {
+  background-color: #000000;
+  width: 100%;
+  height: 100%
+  margin: 20px;
+  border-radius: 0px 0px 30px 30px;
+  position: absolute;
+  float: left;
+  opacity: 0;
+  transition: opacity .5s ease;
+  display: block;
+}
 
-  .zoekafbeelding {
-    position: relative;
-    width: 450px;
-    max-height: 228px;
-    padding: 20px;
-    border-radius: 0px 0px 30px 30px;
-    opacity: 1;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-  }
+.hover-black:hover {
+  opacity: 0.7 !important;
+}
 
-  .gebouw:hover .zoekafbeelding {
-    opacity: 0,3;
-  }
-
-  .adres {
-    font-weight: 600;
-    font-size: 15px;
-    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-  }
+.adres {
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  bottom: 10px;
+}
