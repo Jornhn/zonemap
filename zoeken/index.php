@@ -83,6 +83,10 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Lecture/Exam Hall</label>
           </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Nieuwbouw</label>
+          </div>
         </div>
 
     </div>
@@ -96,7 +100,7 @@
         <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
       </div>
 
-      <!-- Filterresultaten  -->
+      <!-- Filterresultaten Gebouwen -->
 
       <div class="filterresultaten">
 
@@ -109,7 +113,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van OlstToren">
           <div class="overlay">
             <h3>Van OlstToren</h3>
             <span class="adres">Zernike Plein 9
@@ -117,7 +121,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Aletta Jacobs.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="images/Aletta Jacobs.jpg" alt="Aletta Jacobshal">
           <div class="overlay">
             <h3>Aletta Jacobshal</h3>
             <span class="adres">Blauwborgje 4</span>
@@ -125,10 +129,90 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="images/kapteynborg.jpg" alt="Kapteynborg">
           <div class="overlay">
-            <h3>Van OlstToren</h3>
-            <span class="adres">Zernike Plein 9</span>
+            <h3>Kapteynborg</h3>
+            <span class="adres">Landleven 12</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Bernoulliborg.jpg" alt="Bernoulliborg">
+          <div class="overlay">
+            <h3>Bernoulliborg</h3>
+            <span class="adres">Nijenborgh 9</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Aclo.jpg" alt="Aclo">
+          <div class="overlay">
+            <h3>Aclo</h3>
+            <span class="adres">Blauwborgje 16 </span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Brugsmaborg.jpg" alt="Brugsmaborg">
+          <div class="overlay">
+            <h3>Brugsmaborg</h3>
+            <span class="adres">Zernikeplein 9  </span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Duisenberg.jpg" alt="Duisenberg">
+          <div class="overlay">
+            <h3>Duisenberg</h3>
+            <span class="adres">Nettelbosje 2 </span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Energy Academy.jpg" alt="Energy Academy">
+          <div class="overlay">
+            <h3>Energy Academy</h3>
+            <span class="adres">Nijenborgh 6</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/linnaeusborg.jpg" alt="linnaeusborg">
+          <div class="overlay">
+            <h3>linnaeusborg</h3>
+            <span class="adres">Nijenborgh 7</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Marie Kamphuisborg.jpg" alt="Marie Kamphuisborg">
+          <div class="overlay">
+            <h3>Marie Kamphuisborg</h3>
+            <span class="adres">Zernikeplein 23</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Mercator.jpg" alt="Mercator">
+          <div class="overlay">
+            <h3>Mercator</h3>
+            <span class="adres">Landleven 1</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Feringa Building.jpg" alt="Feringa Building">
+          <div class="overlay">
+            <h3>Feringa Building</h3>
+            <span class="adres">Nijeborgh 4</span>
+          </div>
+        </div>
+
+        <div class="gebouw">
+          <img class="zoekafbeelding" src="images/Smitsborg.jpg" alt="Smitsborg">
+          <div class="overlay">
+            <h3>Smitsborg</h3>
+            <span class="adres">Nettelbosje 1</span>
           </div>
         </div>
 
