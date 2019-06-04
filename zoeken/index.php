@@ -89,7 +89,7 @@
 </div>
 
     <!--    -->
-    <div class="  position-static">
+    <div class="col-sm-9" style="z-index:-9999">
       <!-- Searchbox -->
       <div class="zoekbalk">
         <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike...">
