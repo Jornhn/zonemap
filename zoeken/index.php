@@ -177,7 +177,6 @@
       <div class="filterresultaten">
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="Images/Doorenveste.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van Doorenveste</h3>
             <span class="adres">Zernike Plein 11</span>
