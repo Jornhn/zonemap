@@ -249,7 +249,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="Images/linnaeusborg.jpg" alt="linnaeusborg">
+          <img class="zoekafbeelding" src="Images/Linnaeusborg.jpg" alt="linnaeusborg">
           <div class="overlay">
             <h3>linnaeusborg</h3>
             <span class="adres">Nijenborgh 7</span>
