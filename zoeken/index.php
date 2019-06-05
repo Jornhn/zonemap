@@ -182,8 +182,6 @@
             <h3>Van Doorenveste</h3>
             <span class="adres">Zernike Plein 11</span>
           </div>
-          <div class="hover-black"></div>
-          <img class="zoekafbeelding" src="Images/Doorenveste.jpg" alt="Van Doorenveste">
         </div>
 
         <div class="gebouw">
