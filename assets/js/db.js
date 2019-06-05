@@ -190,13 +190,47 @@ function searchAge(age){
     });
 }
 
-function getOne(id){
+function getBuilding(id){
     var buildingId = firebase.database().ref("Buildings/"+id);
     buildingId.on("value", function(data){
         var buildingValue = data.val();
-        console.log(buildingValue);
+        
+        showMapModal();
+        fillMapModal(buildingValue);
     })
 }
+
+function fillMapModal(data){
+    console.log(data.name);
+
+    $('.infoBuildingName').html(data.name);
+    $('.infoBuildingZp').html(data.adres.name);
+    $('.infoBuildingFunction').html(data.function);
+
+    $('.infoBuildingImg').attr('src', 'https://via.placeholder.com/286x150.png');
+
+    //loader test, fill map after 0.6 second (600 ms)
+    setTimeout(function(){ 
+        $('.buildingInformationLoader').hide();
+        $('.BuildingInformationContainer').show();
+    }, 600);
+
+}
+
+function showMapModal(){
+    //enable loader
+    $('.buildingInformationLoader').show();
+    $('.BuildingInformationContainer').hide();
+
+    //open modal
+    $('#mapInfoModal').addClass('openModal');
+}
+
+function closeMapModal(){
+    //close modal
+    $('#mapInfoModal').removeClass('openModal');
+}
+
 
 function testArray(){
     var arrayOfLines = $('#educations').val().split('\n');

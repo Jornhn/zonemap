@@ -13,7 +13,7 @@ $('#main-map').on('click', '.leaflet-marker-icon', function(e){
     var el = $(e.srcElement || e.target),
         id = el.attr('id');
     
-    getOne(id);
+    getBuilding(id);
 });
 
 var LeafIcon = L.Icon.extend({
