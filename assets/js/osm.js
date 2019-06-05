@@ -1,11 +1,17 @@
 //SCRIPT FILE FOR MAIN MAP PAGE!
 
+$( document ).ready(function() {
+    
+    var map = L.map('main-map').setView([53.2400705, 6.5343427], 16);
 
-var map = L.map('main-map').setView([53.2400705, 6.5343427], 16);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+    console.log("geladen");
+
+});
+
 
 
 $('#main-map').on('click', '.leaflet-marker-icon', function(e){
