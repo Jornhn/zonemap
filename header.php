@@ -15,7 +15,9 @@
    crossorigin=""/>
     <link rel="stylesheet" href="../assets/css/style-map.css">
     <link href="../assets/css/stylenieuws.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style-wv.css">
     <link rel="stylesheet" href="../assets/css/style-jh.css">
+    
     
 </head>
 <body>

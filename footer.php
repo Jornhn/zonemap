@@ -36,8 +36,10 @@
     <?php if($page == 'map'){ ?>
         <script src="../assets/js/osm.js"></script>
     <?php } ?>
-
+    
+    <script src="../assets/js/script-wv.js"></script>
     <script src="../assets/js/script.js"></script>
+    
     
     <?php if($page == 'profile'){ ?> 
         <script src="../assets/js/profile.js"></script> 
