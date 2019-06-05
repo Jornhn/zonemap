@@ -144,7 +144,7 @@ function saveBuilding(){
           alert("error!"+error);
         } else {
           alert("gelukt!");
-          window.location.href = "http://localhost:8888/zonemap/profile";
+          window.location.href = "http://www.zonemap.nl/profile";
         }
     });
 }
