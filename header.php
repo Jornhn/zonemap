@@ -29,7 +29,7 @@
             
             //get page name from url
             $uri = $_SERVER['REQUEST_URI'];
-            $arr = explode("/", $uri, 4);
+            $arr = explode("/", $uri, 6);
             $page = $arr[2];
             
             //check if page is current
