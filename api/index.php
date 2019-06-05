@@ -1,20 +1,18 @@
-<?php 
+<?php include('../header.php') ?>
+    
+    <div class="container">
+        <h1>Firebase</h1>
+        <div class="form-inline">
+            <div class="form-group mb-2">
+                <input class="form-control" placeholder="name" type="text" id="nameField">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input class="form-control" placeholder="leeftijd" type="text" id="ageField">
+            </div>
+            <button type="submit" onclick="saveData()" class="btn btn-primary mb-2">Submit</button>
+        </div>
+    </div>
 
-require_once("config.php");
+    
 
-    if($_SERVER['REQUEST_METHOD'] == "GET"){
-        if($_GET['id']){
-
-            $id = $_GET['id'];
-            // --  LEFT JOIN only in one specific building array --
-            echo json_encode($db->query("SELECT * FROM building WHERE id=".$id.""));
-            
-        }else{
-            //-- json encode all buildings for map --
-
-            echo json_encode($db->query("SELECT * FROM building"));
-            
-        }
-    }else{
-        http_response_code(405);
-    }
+<?php include('../footer.php') ?>
