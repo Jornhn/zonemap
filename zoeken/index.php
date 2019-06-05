@@ -101,7 +101,7 @@
       <div class="filterresultaten">
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Doorenveste.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="Images/Doorenveste.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van Doorenveste</h3>
             <span class="adres">Zernike Plein 11</span>
@@ -109,7 +109,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="Images/Van Olst.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van OlstToren</h3>
             <span class="adres">Zernike Plein 9
@@ -117,7 +117,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Aletta Jacobs.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="Images/Aletta Jacobs.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Aletta Jacobshal</h3>
             <span class="adres">Blauwborgje 4</span>
@@ -125,7 +125,7 @@
         </div>
 
         <div class="gebouw">
-          <img class="zoekafbeelding" src="images/Van Olst.jpg" alt="Van Doorenveste">
+          <img class="zoekafbeelding" src="Images/Van Olst.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van OlstToren</h3>
             <span class="adres">Zernike Plein 9</span>
