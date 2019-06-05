@@ -104,15 +104,6 @@ function logout(){
 }
 
 
-
-function saveData(){
-    firebase.database().ref("User/7").set({
-        name: document.getElementById('nameField').value,
-        age: document.getElementById('ageField').value,
-        array: ['eerste item', 'tweede item']
-    });
-}
-
 function saveBuilding(){
 
     var input_name = $('#building_name').val();
@@ -153,6 +144,7 @@ function saveBuilding(){
           alert("error!"+error);
         } else {
           alert("gelukt!");
+          window.location.href = "http://localhost:8888/zonemap/profile";
         }
     });
 }
