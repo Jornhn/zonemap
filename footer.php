@@ -28,7 +28,7 @@
     <?php 
         $uri = $_SERVER['REQUEST_URI'];
         $arr = explode("/", $uri, 4);
-        $page = $arr[2];
+        $page = $arr[1];
     ?>
 
     <script src="../assets/js/db.js"></script>
