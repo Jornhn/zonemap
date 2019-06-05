@@ -1,6 +1,45 @@
+
 <?php include('../header.php') ?>
 
-<!-- HTML CODE HIER... -->
-<!-- In header.php de style linkjes plakken en in footer.php de javascript links plakken -->
+<div id="main-map" style="width:100%; height:100vh; opacity:0;"></div>
+
+<div id="mapInfoModal" class="mapInfoShowSlider">
+    <!--Div voor de container van de gebouwen informatie-->
+    <button class="closeModalbtn" onclick="closeMapModal();"><i class="fas fa-times"></i></button>
+
+    <div class="BuildingInformationContainer">
+        <h1 class="infoBuildingName">Niet bekend</h1>
+        <p class="infoBuildingZp">Niet bekend</p>
+
+        <!--Div voor responsive, deze is gelinkt naar css voor gebruik van flex box wanneer in mobiele versie-->
+        <div class="mobileStyleFlexBox">
+            <img class="infoBuildingImg" src="">
+
+            <p class="infoBuildingHeaderStyle">Gebouw functie:</p>
+            <ul class="infoBuildingList infoBuildingTextStyle">
+                <li class="infoBuildingFunction"></li>
+            </ul>	
+        </div>
+
+        <!--Div voor responsive, deze hide onderstaande info voor wannneer in mobiel scherm zit-->
+        <div class="mobileStyleHideInfo">
+            <p class="infoBuildingOpleidingen infoBuildingHeaderStyle">Opleidingen:</p>
+            <!-- <ul class="infoBuildingList infoBuildingTextStyle">
+                <li>Communicatie &amp; Multimedia Design</li>
+                <li>Communicatie</li>
+                <li>Business</li>
+            </ul> -->
+            
+            <p class="infoBuildingVoorzieningen infoBuildingHeaderStyle">Voorzieningen:</p>
+            <!-- <ul class="infoBuildingList infoBuildingTextStyle">
+                <li>Toiletten</li>
+                <li>Eetvoorziening</li>
+                <li>Koffiecorner</li>
+                <li>Lift</li>
+            </ul> -->
+        </div>
+    </div>	
+    <div class="buildingInformationLoader">Loading...</div>
+</div>
 
 <?php include('../footer.php') ?>
