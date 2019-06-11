@@ -10,6 +10,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -42,6 +44,8 @@
     <?php if($page == 'profile'){ ?> 
         <script src="../assets/js/profile.js"></script> 
     <?php } ?>
+
+    <script src="../assets/js/search.js"></script>
 
 </body>
 </html>

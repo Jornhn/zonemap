@@ -152,7 +152,7 @@ function saveBuilding(){
 function getData(){
     var allData = [];
 
-    var user = firebase.database().ref("User/");
+    var user = firebase.database().ref("Buildings/");
     user.on("child_added", function(data){
         var UserValues = data.val();
         allData.push(UserValues);
@@ -263,3 +263,4 @@ function getLatLong(){
         console.log("klaar");
       });;
 }
+
