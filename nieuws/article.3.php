@@ -4,6 +4,7 @@
 
 <div class="col-12">
     <div class="toptext">
+    <a href="index.php"><div class="back">Vorige</div></a>
     <img src="../assets/images/avatar.png" class="avatarsm"><h1 class="toptext1">Nieuwe energie in spotlight tijdens TransFuture Festival op 12 Juni</h1>
     </div>
 
