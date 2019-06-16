@@ -11,12 +11,19 @@ body {
     display: none;
 }
 
+#rijtitel1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: #3E3E3E;
+}
+
 .divider {
     height: 20px;
 }
 
 #newsarticles {
-    margin-left: 10%;
+    margin-left: 30px;
 }
 
 .newstitle {
@@ -82,11 +89,24 @@ body {
     color: #3E3E3E;
 }
 
+#featuredarticles {
+    border: 2px solid black;
+    padding: 10px;
+    margin-right: 30px;
+}
 
 #line {
-    width: 200px;
+    width: 330px;
     height: 4px;
-    margin-left: 30px;
+    margin-left: 0px;
+    background-color: #2ECC71;
+    margin-bottom: 30px;
+}
+
+#line1 {
+    width: 130px;
+    height: 4px;
+    margin-left: 0px;
     background-color: #2ECC71;
     margin-bottom: 30px;
 }
@@ -100,8 +120,8 @@ body {
 
 .articlename {
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 20px;
     color: #3E3E3E;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -109,9 +129,9 @@ body {
 
 .articlesub {
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #3E3E3E;
+    font-weight: 700;
+    font-size: 14px;
+    color: #A0A0A0;
     margin-bottom: 0px;
 }
 
@@ -134,6 +154,15 @@ body {
     #features {
       display: none;
     }
+
+    #rijtitel {
+        display: none;
+    }
+
+    #line1 {
+        display: none;
+    }
+
     .newstitle {
         font-size: 16px;
         margin-top: 5px;
