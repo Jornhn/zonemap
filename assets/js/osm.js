@@ -16,6 +16,21 @@ $('#main-map').on('click', '.leaflet-marker-icon', function(e){
     getBuilding(id);
 });
 
+
+function getUrlId(){
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var url_id = url.searchParams.get("id");
+    
+    //checks if ?id is not empty
+    if(url_id){
+        getBuilding(url_id);
+        console.log(url_id); 
+    }
+}
+getUrlId();
+
+
 var LeafIcon = L.Icon.extend({
     options: {
         iconSize:     [38, 38],
