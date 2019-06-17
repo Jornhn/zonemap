@@ -3,7 +3,7 @@
 <div class="row">
     <!-- Filterfunctie -->
     <!-- <div class="col-sm-3 filter"></div> -->
-    <div class="col-sm-3 filter">
+    <div class="hidden-md  col-sm-3 filter">
       <div class="filtercontainer">
 
         <p class="sort">Gesorteerd op:  <a class="sort" href="#">Afstand</a>/<a class="sort" href="#">Naam</a></p>
@@ -168,15 +168,16 @@
     <div class="col-sm-9">
       <!-- Searchbox -->
       <div class="zoekbalk">
-        <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike...">
+        <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike..." disabled>
         <a id="btnSearch" class="btn-search"><i class="fa fa-search"></i></a>
       </div>
+      <p style="font-size: 10px; margin-left: 20px;">Momenteel is het nog niet mogelijk om te zoeken, <br>klik een gebouw hieronder aan om verder te gaan...</p>
 
       <!-- Filterresultaten Gebouwen -->
 
       <div class="filterresultaten">
-
-        <div class="gebouw">
+        <div class="row">
+        <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Doorenveste.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van Doorenveste</h3>
@@ -184,7 +185,7 @@
           </div>
         </div>
 
-        <div class="gebouw">
+        <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Van Olst.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van OlstToren</h3>
@@ -192,7 +193,7 @@
           </div>
         </div>
 
-        <div class="gebouw">
+        <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Aletta Jacobs.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Aletta Jacobshal</h3>
@@ -200,7 +201,7 @@
           </div>
         </div>
 
-        <div class="gebouw">
+        <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Van Olst.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Kapteynborg</h3>
@@ -208,7 +209,7 @@
           </div>
         </div>
 
-        <div class="gebouw">
+        <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Bernoulliborg.jpg" alt="Bernoulliborg">
           <div class="overlay">
             <h3>Bernoulliborg</h3>
@@ -287,7 +288,7 @@
             <span class="adres">Nettelbosje 1</span>
           </div>
         </div>
-
+        </div>
       </div>
 
     </div>
