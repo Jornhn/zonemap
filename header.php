@@ -14,7 +14,11 @@
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
     <link rel="stylesheet" href="../assets/css/style-map.css">
+    <link href="../assets/css/stylenieuws.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style-wv.css">
     <link rel="stylesheet" href="../assets/css/style-jh.css">
+    
+    
 </head>
 <body>
 <div id="login-alert">Je bent ingelogd. <a id="logout-btn" href="#">Uitloggen</a></div>
@@ -29,8 +33,8 @@
             
             //get page name from url
             $uri = $_SERVER['REQUEST_URI'];
-            $arr = explode("/", $uri, 6);
-            $page = $arr[2];
+            $arr = explode("/", $uri, 5);
+            $page = $arr[1];
             
             //check if page is current
             if($page == 'zoeken'){ ?>
@@ -44,10 +48,10 @@
             <?php } ?>
 
 
-            <a href='http://localhost:8888/zonemap/zoeken'><li class="<?= $search ?>"><i class='fas fa-search'></i></li></a>
-            <a href='http://localhost:8888/zonemap/map'><li class="<?= $map ?>"><i class='fas fa-map'></i></li></a>
-            <a href='http://localhost:8888/zonemap/profile'><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i></li></a>
-            <a href='http://localhost:8888/zonemap/nieuws'><li class="<?= $news ?>"><i class='fas fa-newspaper'></i></li></a>
+            <a href='http://www.zonemap.nl/zoeken'><li class="<?= $search ?>"><i class='fas fa-search'></i></li></a>
+            <a href='http://www.zonemap.nl/map'><li class="<?= $map ?>"><i class='fas fa-map'></i></li></a>
+            <a href='http://www.zonemap.nl/profile'><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i></li></a>
+            <a href='http://www.zonemap.nl/nieuws'><li class="<?= $news ?>"><i class='fas fa-newspaper'></i></li></a>
         </ul>
     </nav> 
 
