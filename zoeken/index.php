@@ -3,7 +3,7 @@
 <div class="row">
     <!-- Filterfunctie -->
     <!-- <div class="col-sm-3 filter"></div> -->
-    <div class="hidden-md  col-sm-3 filter">
+    <div class="hidden-md  col-sm-3 filter" style="display:none">
       <div class="filtercontainer">
 
         <p class="sort">Gesorteerd op:  <a class="sort" href="#">Afstand</a>/<a class="sort" href="#">Naam</a></p>
@@ -165,7 +165,8 @@
 </div>
 
     <!--    -->
-    <div class="col-sm-9">
+    <div class="col-12">
+    <div class="container">
       <!-- Searchbox -->
       <div class="zoekbalk">
         <input id="searchBar" class="searchbar" type="text" placeholder="Zoek op Zernike..." disabled>
@@ -176,8 +177,8 @@
       <!-- Filterresultaten Gebouwen -->
 
       <div class="filterresultaten">
-        <div class="row">
-        <div class="gebouw col-lg-6">
+        <div class="row" id="row-results">
+        <!-- <div class="gebouw col-lg-6">
           <img class="zoekafbeelding" src="Images/Doorenveste.jpg" alt="Van Doorenveste">
           <div class="overlay">
             <h3>Van Doorenveste</h3>
@@ -287,12 +288,12 @@
             <h3>Smitsborg</h3>
             <span class="adres">Nettelbosje 1</span>
           </div>
-        </div>
+        </div> -->
         </div>
       </div>
 
     </div>
-
+    </div>
   </div>
 
 <?php include('../footer.php') ?>

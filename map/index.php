@@ -24,19 +24,14 @@
         <!--Div voor responsive, deze hide onderstaande info voor wannneer in mobiel scherm zit-->
         <div class="mobileStyleHideInfo">
             <p class="infoBuildingOpleidingen infoBuildingHeaderStyle">Opleidingen:</p>
-            <!-- <ul class="infoBuildingList infoBuildingTextStyle">
-                <li>Communicatie &amp; Multimedia Design</li>
-                <li>Communicatie</li>
-                <li>Business</li>
-            </ul> -->
+            <ul class="infoBuildingList infoBuildingTextStyle" id="ulopleidingen">
+            
+            </ul>
             
             <p class="infoBuildingVoorzieningen infoBuildingHeaderStyle">Voorzieningen:</p>
-            <!-- <ul class="infoBuildingList infoBuildingTextStyle">
-                <li>Toiletten</li>
-                <li>Eetvoorziening</li>
-                <li>Koffiecorner</li>
-                <li>Lift</li>
-            </ul> -->
+            <ul class="infoBuildingList infoBuildingTextStyle" id="ulvoorzieningen">
+                
+            </ul>
         </div>
     </div>	
     <div class="buildingInformationLoader">Loading...</div>

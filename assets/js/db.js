@@ -104,7 +104,9 @@ function logout(){
 }
 
 
-function saveBuilding(){
+function saveBuilding(edit){
+
+    var building_id = $('#building_id').val();
 
     var input_name = $('#building_name').val();
 
@@ -129,7 +131,14 @@ function saveBuilding(){
     var input_facilities = $('#facilities').val().split('\n');
 
     //save to database
-    created_id = Date.now();
+    if(edit){
+        created_id = building_id;
+        console.log("edit"+created_id);
+    }else{
+        created_id = Date.now();
+        console.log("nieuw");
+    }
+    
 
     firebase.database().ref("Buildings/"+created_id).set({
         id: created_id,
@@ -147,6 +156,36 @@ function saveBuilding(){
           window.location.href = "http://www.zonemap.nl/profile";
         }
     });
+}
+
+function getEditUrl(){
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var editurl_id = url.searchParams.get("edit_id");
+    
+    //checks if ?id is not empty
+    if(editurl_id){
+        getBuilding2(editurl_id);
+    }
+}
+getEditUrl();
+
+function fillEditForm(data){
+    console.log(data);
+
+    $('building_id').val(data.id);
+    $('#building_name').val(data.name);
+    $('#adres_name').val(data.adres.name);
+    $('#adres_num').val();
+    $('#adres_postcode').val(data.adres.zipcode);
+    $('#adres_plaats').val(data.adres.place);
+    $('#building_lat').val(data.latLong[0]);
+    $('#building_lon').val(data.latLong[1]);
+    $('#function_building').val(data.function);
+
+
+    $('#educations').val();
+    $('#facilities').val();
 }
 
 function getData(){
@@ -182,6 +221,7 @@ function searchAge(age){
     });
 }
 
+//for filling the map
 function getBuilding(id){
     var buildingId = firebase.database().ref("Buildings/"+id);
     buildingId.on("value", function(data){
@@ -192,6 +232,16 @@ function getBuilding(id){
     })
 }
 
+//for editing the map
+function getBuilding2(id){
+    var buildingId = firebase.database().ref("Buildings/"+id);
+    buildingId.on("value", function(data){
+        var buildingValue = data.val();
+        
+        fillEditForm(buildingValue);
+    })
+}
+
 function fillMapModal(data){
     console.log(data.name);
 
@@ -199,7 +249,23 @@ function fillMapModal(data){
     $('.infoBuildingZp').html(data.adres.name);
     $('.infoBuildingFunction').html(data.function);
 
-    $('.infoBuildingImg').attr('src', 'https://via.placeholder.com/286x150.png');
+    var opleidingen = data.education;
+    var voorzieningen = data.facilities;
+
+    //clear li appends from below
+    $('#ulvoorzieningen').html('');
+    $('#ulopleidingen').html('');
+
+    opleidingen.forEach(function(opleiding){
+        $('#ulopleidingen').append('<li>'+opleiding+'</li>');
+    });
+
+    voorzieningen.forEach(function(voorziening){    
+        $('#ulvoorzieningen').append('<li>'+voorziening+'</li>');
+    });
+    
+
+    $('.infoBuildingImg').attr('src', '../zoeken/Images/'+data.img);
 
     //loader test, fill map after 0.6 second (600 ms)
     setTimeout(function(){ 

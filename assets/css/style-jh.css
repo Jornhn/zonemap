@@ -127,6 +127,18 @@ body{
     color: #fff;
 }
 
+#ulopleidingen, #ulvoorzieningen{
+    overflow-y: auto;
+    height: 90px
+}
+
+
+#row-results:first-child{
+    /* margin-left: 16px; */
+}
+
+
+
 @media screen and (max-width: 740px) {
     .desktopHeader{
         display: none;

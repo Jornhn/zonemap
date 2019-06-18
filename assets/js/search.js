@@ -53,3 +53,21 @@ function testSearch(){
         });
     });
 }
+
+function fillSearchList(){
+    var allData = [];
+
+    var user = firebase.database().ref("Buildings/");
+    user.on("child_added", function(data){
+        var UserValues = data.val();
+        allData.push(UserValues);
+
+        $( ".filterresultaten" ).append( "<div class='gebouw col-lg-6'><a href='/zonemap/map/?id="+UserValues.id+"'><img class='zoekafbeelding' src='Images/"+UserValues.img+"'><div class='overlay'><h3>"+UserValues.name+"</h3><span class='adres'>"+UserValues.adres.name+"</span></div></a></div>" );
+
+        console.log(UserValues);
+    });
+}
+
+$(document).ready(function() {
+    fillSearchList();
+});

@@ -136,6 +136,7 @@ html {
   bottom: 20px;
   left: 40px;
   z-index: 1;
+  padding: 20px;
 }
 
 .overlay>h3 {
@@ -147,9 +148,6 @@ html {
 
 .gebouw {
   position: relative;
-
-  border-radius: 0px 0px 30px 30px;
-  transition: 0.5s ease; 
 }
 
 .zoekafbeelding {
