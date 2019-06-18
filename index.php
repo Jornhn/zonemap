@@ -1,1 +1,0 @@
-<?php header('Location: https://www.zonemap.nl/map'); ?>
