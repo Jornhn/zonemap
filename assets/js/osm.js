@@ -1,5 +1,9 @@
 //SCRIPT FILE FOR MAIN MAP PAGE!
 
+var selectedIcon = L.icon({
+    iconUrl: '../assets/images/marker_black.png',
+    iconSize: [20,20]
+});
 
 var map = L.map('main-map').setView([53.2400705, 6.5343427], 16);
 
@@ -12,9 +16,26 @@ $('#main-map').on('click', '.leaflet-marker-icon', function(e){
 
     var el = $(e.srcElement || e.target),
         id = el.attr('id');
+
     
     getBuilding(id);
 });
+
+
+function getUrlId(){
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var url_id = url.searchParams.get("id");
+    
+    //checks if ?id is not empty
+    if(url_id){
+        getBuilding(url_id);
+        console.log(url_id); 
+    }
+}
+getUrlId();
+
+
 
 var LeafIcon = L.Icon.extend({
     options: {

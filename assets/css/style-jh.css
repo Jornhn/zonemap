@@ -127,12 +127,78 @@ body{
     color: #fff;
 }
 
+.mobileHeader ul .active{
+    color: #3498DB;
+}
+
+#ulopleidingen, #ulvoorzieningen{
+    overflow-y: auto;
+    height: 90px
+}
+
+
+#row-results:first-child{
+    /* margin-left: 16px; */
+}
+
+.mobileHeader{
+    padding-top: 20px;
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 2px -2px 20px #ddd;
+    text-align: center;
+    color: #B2B2B2;
+    font-weight: 600;
+}
+
+.mobileHeader a{
+    color: #B2B2B2;
+}
+
+.mobileHeader li{
+    width: 25%;
+    float: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* .mobileMapInfoModal{
+    display: none;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    top: 30px;
+    bottom: 120px;
+    z-index: 9999;
+    background-color: #fff;
+    padding: 30px;
+} */
+
+
+
 @media screen and (max-width: 740px) {
     .desktopHeader{
         display: none;
+    }
+
+    .mobileHeader{
+        display: block;
     }
     
     body{
         padding-left: 0px;
     }
+
+    .small-container{
+        width: 90%;
+    }
+
+    /* .mobileMapInfoModal{
+        display: block;
+    } */
 }

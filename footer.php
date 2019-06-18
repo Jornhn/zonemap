@@ -10,6 +10,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -28,7 +30,7 @@
     <?php 
         $uri = $_SERVER['REQUEST_URI'];
         $arr = explode("/", $uri, 4);
-        $page = $arr[1];
+        $page = $arr[2];
     ?>
 
     <script src="../assets/js/db.js"></script>
@@ -44,6 +46,8 @@
     <?php if($page == 'profile'){ ?> 
         <script src="../assets/js/profile.js"></script> 
     <?php } ?>
+
+    <script src="../assets/js/search.js"></script>
 
 </body>
 </html>
