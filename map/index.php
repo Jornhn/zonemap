@@ -4,7 +4,7 @@
 <div id="main-map" style="width:100%; height:100vh; opacity:0;"></div>
 
 <div id="mapInfoModal" class="mapInfoShowSlider">
-    <div id="inconstruction" class="inconstruction">
+    <div id="inconstruction" class="">
         Dit gebouwd wordt vernieuwd/uitgebreid
     </div>
     <!--Div voor de container van de gebouwen informatie-->
