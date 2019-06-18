@@ -289,6 +289,7 @@ function fillMapModal(data){
 
     //remove class 
     $('#inconstruction').removeClass("inconstruction");
+    $('#mapInfoModal').css("padding-top","5px");
     
     //loader test, fill map after 0.6 second (600 ms)
     setTimeout(function(){ 
