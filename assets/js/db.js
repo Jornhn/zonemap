@@ -287,10 +287,11 @@ function fillMapModal(data){
         $('.infoBuildingImg').attr('src', '../zoeken/Images/placeholder.jpg');
     }   
 
-
-    // checks if building is under construction
-    $('#mapInfoModal').css("padding-top","50px");
-    $('#inconstruction').addClass("inconstruction");
+    if(data.constrution === true){
+        // checks if building is under construction
+        $('#mapInfoModal').css("padding-top","50px");
+        $('#inconstruction').addClass("inconstruction");
+    }
     
 
     //loader test, fill map after 0.6 second (600 ms)
