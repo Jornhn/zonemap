@@ -194,11 +194,18 @@ body{
 } */
 
 .inconstruction{
-    display: block;
-    height: 20px;
-    width: 100%;
+    display: block !important;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     background-color: #f1c40f;
+    text-align: center;
+    color: #000;
 }
+
+
 
 #inconstruction{
     display: none;

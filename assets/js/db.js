@@ -286,6 +286,11 @@ function fillMapModal(data){
     }else{
         $('.infoBuildingImg').attr('src', '../zoeken/Images/placeholder.jpg');
     }   
+
+
+    // checks if building is under construction
+    $('#mapInfoModal').css("padding-top","50px");
+    $('#inconstruction').addClass("inconstruction");
     
 
     //loader test, fill map after 0.6 second (600 ms)

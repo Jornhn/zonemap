@@ -5,7 +5,7 @@
 
 <div id="mapInfoModal" class="mapInfoShowSlider">
     <div id="inconstruction" class="inconstruction">
-        
+        Dit gebouwd wordt vernieuwd/uitgebreid
     </div>
     <!--Div voor de container van de gebouwen informatie-->
     <button class="closeModalbtn" onclick="closeMapModal();"><i class="fas fa-times"></i></button>
