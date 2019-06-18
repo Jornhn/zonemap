@@ -266,20 +266,19 @@ function fillMapModal(data){
     if (opleidingen[0] === '') {
         $('#ulopleidingen').html('<p class="text-muted custom-error-muted">Geen opleidingen beschikbaar</p>');
         console.log("geen opleidingen");
+    }else{
+        opleidingen.forEach(function(opleiding){
+            $('#ulopleidingen').append('<li>'+opleiding+'</li>');
+        });
     }
 
     if (voorzieningen[0] === '') {
         $('#ulvoorzieningen').html('<p class="text-muted custom-error-muted">Geen voorzieningen beschikbaar</p>');
+    }else{
+        voorzieningen.forEach(function(voorziening){    
+            $('#ulvoorzieningen').append('<li>'+voorziening+'</li>');
+        });
     }
-
-    opleidingen.forEach(function(opleiding){
-        $('#ulopleidingen').append('<li>'+opleiding+'</li>');
-    });
-
-    voorzieningen.forEach(function(voorziening){    
-        $('#ulvoorzieningen').append('<li>'+voorziening+'</li>');
-    });
-
 
     
     if(data.img != undefined){
