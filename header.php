@@ -34,7 +34,7 @@
             //get page name from url
             $uri = $_SERVER['REQUEST_URI'];
             $arr = explode("/", $uri, 5);
-            $page = $arr[2];
+            $page = $arr[1];
             
             //check if page is current
             if($page == 'zoeken'){ ?>
