@@ -264,8 +264,12 @@ function fillMapModal(data){
         $('#ulvoorzieningen').append('<li>'+voorziening+'</li>');
     });
     
-
-    $('.infoBuildingImg').attr('src', '../zoeken/Images/'+data.img);
+    if(data.img != undefined){
+        $('.infoBuildingImg').attr('src', '../zoeken/Images/'+data.img);
+    }else{
+        $('.infoBuildingImg').attr('src', '../zoeken/Images/placeholder.jpg');
+    }   
+    
 
     //loader test, fill map after 0.6 second (600 ms)
     setTimeout(function(){ 
