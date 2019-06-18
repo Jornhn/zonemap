@@ -7,11 +7,17 @@ $( document ).ready(function() {
             $('.pf-email').html("<b>User Email:</b> "+user.email);
 
             $('.profile-container').hide();
+            $('.profile-container').css("visibility", "hidden");
+
             $('.admin-panel').show();
+            $('.admin-panel').css("visibility", "visible");
             console.log("- LOGGEDIN -");
         } else {
             $('.profile-container').show();
+            $('.profile-container').css("visibility", "visible");
+            
             $('.admin-panel').hide();
+            $('.admin-panel').css("visibility", "hidden");
 
             console.log("- NOT LOGGEDIN - ");
         }
