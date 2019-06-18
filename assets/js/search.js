@@ -66,7 +66,7 @@ function fillSearchList(){
             UserValues.img = 'placeholder.jpg';
         }
 
-        $( ".filterresultaten" ).append( "<div class='gebouw col-lg-6'><a href='/zonemap/map/?id="+UserValues.id+"'><img class='zoekafbeelding' src='Images/"+UserValues.img+"'><div class='overlay'><h3>"+UserValues.name+"</h3><span class='adres'>"+UserValues.adres.name+"</span></div></a></div>" );
+        $( ".filterresultaten" ).append( "<div class='gebouw col-lg-6'><a href='/map/?id="+UserValues.id+"'><img class='zoekafbeelding' src='Images/"+UserValues.img+"'><div class='overlay'><h3>"+UserValues.name+"</h3><span class='adres'>"+UserValues.adres.name+"</span></div></a></div>" );
     });
 }
 
