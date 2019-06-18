@@ -263,11 +263,12 @@ function fillMapModal(data){
     $('#ulopleidingen').html('');
 
     console.log(opleidingen);
-    if (typeof opleidingen == 'undefined' && opleidingen.length <= 0) {
+    if (opleidingen == '[""]') {
         $('#ulopleidingen').html('<p class="text-muted">Geen opleidingen beschikbaar</p>');
+        console.log("geen opleidingen");
     }
 
-    if (typeof voorzieningen == 'undefined' && voorzieningen.length <= 0) {
+    if (voorzieningen == '[""]') {
         $('#ulvoorzieningen').html('<p class="text-muted">Geen voorzieningen beschikbaar</p>');
     }
 
