@@ -4,6 +4,7 @@
 
 <div class="col-12">
     <div class="toptext">
+    <a href="index.php"><div class="back">Vorige</div></a>
     <img src="../assets/images/avatar.png" class="avatarsm"><h1 class="toptext1">Avebe start Student challenge</h1>
     </div>
 

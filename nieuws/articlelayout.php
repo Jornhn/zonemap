@@ -3,7 +3,9 @@
 <div class="row">
 
 <div class="col-12">
+    
     <div class="toptext">
+    <a href="index.php"><div class="back">Vorige</div></a>
     <img src="../assets/images/avatar.png" class="avatarsm"><h1 class="toptext1">*Insert title**Insert title**Insert title**Insert title**Insert title**Insert title**Insert title**Insert title*</h1>
     </div>
 

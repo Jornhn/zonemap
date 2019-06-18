@@ -7,6 +7,8 @@
             
             <div class="col sm-8" id="newsarticles">
 <!-- Eerste column met nieuwsartikelen -->
+                    <div id="rijtitel"><h1 id="rijtitel1">Nieuws</h1></div>
+                    <div id="line1"></div>
                     <a href="article.1.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Avebe start Student challenge</h1>
@@ -86,28 +88,28 @@
 
                 <div class="row no-gutters" id="featuredarticles">
 
-                    <div class="col-1"><p class="articlenr">01</p></div>
+                    
                     <div class="col-11">
                         <a href="article.1.php"><p class="articlename">Avebe start Student challenge</p>
                         <p class="articlesub">Avebe bestaat dit jaar 100 jaar. Dat betekent terugkijken, maar ook vooruitblikken.</p>
                         <p class="articledate">15-05-2019</p></a>
                     </div>
 
-                    <div class="col-1"><p class="articlenr">02</p></div>
+                    
                     <div class="col-11">
                         <a href="article.2.php"><p class="articlename">Hanzehogeschool op weg naar rookvrij</p>
                         <p class="articlesub">Vanaf maandag 6 mei 2019 is de Hanzehogeschool Groningen op weg naar een rookvrije Hanzehogeschool Groningen.</p>
                         <p class="articledate">08-05-2019</p></a>
                     </div>
 
-                    <div class="col-1"><p class="articlenr">03</p></div>
+                    
                     <div class="col-11">
                         <a href="article.3.php"><p class="articlename">Nieuwe energie in spotlight tijdens TransFuture Festival op 12 Juni</p>
                         <p class="articlesub">Hoe moeten we de energietransitie vormgeven? Welke innovaties in nieuwe energie worden er ontwikkeld?</p>
                         <p class="articledate">18-04-2019</p></a>
                     </div>
 
-                    <div class="col-1"><p class="articlenr">04</p></div>
+                    
                     <div class="col-11">
                         <a href="article.4.php"><p class="articlename">UMCG wint Rookvrije Generatie Award</p>
                         <p class="articlesub">Het UMCG heeft de Rookvrije Generatie Award gewonnen in de categorie Zorg.</p>
