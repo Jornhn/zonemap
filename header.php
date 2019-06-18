@@ -57,4 +57,10 @@
 
 </header>
 <header class="mobileHeader">
+    <ul>
+        <a href="http://localhost:8888/zonemap/zoeken"><li class="<?= $search ?>"><i class='fas fa-search'></i><br>Zoeken</li></a>
+        <a href="http://localhost:8888/zonemap/map"><li class="<?= $map ?>"><i class='fas fa-map'></i><br>Map</li></a>
+        <a href="http://localhost:8888/zonemap/profile"><li class="<?= $profile ?>"><i class='fas fa-user-alt'></i><br>Profile</li></a>
+        <a href="http://localhost:8888/zonemap/nieuws"><li class="<?= $news ?>"><i class='fas fa-newspaper'></i><br>News</li></a>
+    </ul>
 </header>

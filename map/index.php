@@ -37,4 +37,9 @@
     <div class="buildingInformationLoader">Loading...</div>
 </div>
 
+<div class="mobileMapInfoModal">
+    <button class="closeModalbtn" onclick="closeMapModal();"><i class="fas fa-times"></i></button>
+    <h1>Test</h1>
+</div>
+
 <?php include('../footer.php') ?>
