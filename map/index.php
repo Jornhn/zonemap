@@ -5,7 +5,7 @@
 
 <div id="mapInfoModal" class="mapInfoShowSlider">
     <div id="inconstruction" class="">
-       <a href="https://www.zonemap.nl/nieuws/article.6.php">Dit gebouwd wordt vernieuwd/uitgebreid</a> 
+       <a href="https://www.zonemap.nl/nieuws/article.6.php">Dit gebouw wordt vernieuwd/uitgebreid</a> 
     </div>
     <!--Div voor de container van de gebouwen informatie-->
     <button class="closeModalbtn" onclick="closeMapModal();"><i class="fas fa-times"></i></button>
