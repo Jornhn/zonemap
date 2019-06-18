@@ -175,9 +175,9 @@ body{
 }
 
 .custom-error-muted{
-    font-size: 12px;
-    margin-left: -38px;
-    font-weight: 400;
+    font-size: 12px !important;
+    margin-left: -38px !important;
+    font-weight: 400 !important;
     text-decoration: none !important;
 }
 
