@@ -9,6 +9,21 @@
 <!-- Eerste column met nieuwsartikelen -->
                     <div id="rijtitel"><h1 id="rijtitel1">Nieuws</h1></div>
                     <div id="line1"></div>
+
+                    <a href="article.6.php"><div class="row">
+                    <div class="col-8">
+                        <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">RUG presenteert plannen uitbreiding Aletta Jacobshal op Zernike</h1>
+                        <h2 class="newssubtitle">De wens van faculteiten en docenten van de universiteit is helder: meer tentamens (digitaal) kunnen afnemen tijdens de tentamenperiode.</h2>
+                        <h3 class="newstext">De wens van faculteiten en docenten van de universiteit is helder: meer tentamens (digitaal) kunnen afnemen tijdens de tentamenperiode. De bestaande Aletta Jacobshal op de Zernike Campus heeft daarvoor op dit moment te weinig capaciteit. Daarom heeft de Rijksuniversiteit Groningen (RUG) samen met architectenbureau Onix NL uit Groningen een plan gemaakt voor een uitbreiding met meer college- en tentamenruimten, een extra foyer/wachtruimte, studielandschap en meer fietsenstallingen. BAM Bouw en Techniek is de aannemer die het project gaat uitvoeren.</h3>
+                                <img src="../assets/images/avatar.png" class="userimglg"><h4 class="newsdate">12-07-2018</h4>
+                    </div>
+                    <div class="col-4">
+                        <img class="articleimage" src="../assets/images/ajnieuw.png">
+                    </div>
+                </div></a>
+
+                <div class="divider"></div>
+
                     <a href="article.1.php"><div class="row">
                     <div class="col-8">
                         <h1 class="newstitle"><img src="../assets/images/avatar.png" class="userimgsm">Avebe start Student challenge</h1>
