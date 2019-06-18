@@ -287,17 +287,20 @@ function fillMapModal(data){
         $('.infoBuildingImg').attr('src', '../zoeken/Images/placeholder.jpg');
     }   
 
-    if(data.constrution === true){
-        // checks if building is under construction
-        $('#mapInfoModal').css("padding-top","50px");
-        $('#inconstruction').addClass("inconstruction");
-    }
+    //remove class 
+    $('#inconstruction').removeClass("inconstruction");
     
-
     //loader test, fill map after 0.6 second (600 ms)
     setTimeout(function(){ 
         $('.buildingInformationLoader').hide();
         $('.BuildingInformationContainer').show();
+
+        if(data.constrution === true){
+            // checks if building is under construction
+            $('#mapInfoModal').css("padding-top","50px");
+            $('#inconstruction').addClass("inconstruction");
+        }
+
     }, 600);
 
 }
