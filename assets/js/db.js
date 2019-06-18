@@ -264,12 +264,12 @@ function fillMapModal(data){
 
     console.log(opleidingen);
     if (opleidingen[0] === '') {
-        $('#ulopleidingen').html('<p class="text-muted">Geen opleidingen beschikbaar</p>');
+        $('#ulopleidingen').html('<p class="text-muted custom-error-muted">Geen opleidingen beschikbaar</p>');
         console.log("geen opleidingen");
     }
 
     if (voorzieningen[0] === '') {
-        $('#ulvoorzieningen').html('<p class="text-muted">Geen voorzieningen beschikbaar</p>');
+        $('#ulvoorzieningen').html('<p class="text-muted custom-error-muted">Geen voorzieningen beschikbaar</p>');
     }
 
     opleidingen.forEach(function(opleiding){
