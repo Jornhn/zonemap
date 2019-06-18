@@ -193,6 +193,17 @@ body{
     padding: 30px;
 } */
 
+.inconstruction{
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-color: #f1c40f;
+}
+
+#inconstruction{
+    display: none;
+}
+
 
 
 @media screen and (max-width: 740px) {

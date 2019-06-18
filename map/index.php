@@ -4,6 +4,9 @@
 <div id="main-map" style="width:100%; height:100vh; opacity:0;"></div>
 
 <div id="mapInfoModal" class="mapInfoShowSlider">
+    <div id="inconstruction" class="inconstruction">
+        
+    </div>
     <!--Div voor de container van de gebouwen informatie-->
     <button class="closeModalbtn" onclick="closeMapModal();"><i class="fas fa-times"></i></button>
 
