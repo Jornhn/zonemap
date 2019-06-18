@@ -1,6 +1,6 @@
 <?php include('../header.php') ?>
 
-<div class="profile-container">
+<div class="profile-container container">
     
     <div class="row">
         <div id="tab-login" class="col-6 profile-tab active">Inloggen</div>
