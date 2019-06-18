@@ -15,7 +15,7 @@ $( document ).ready(function() {
         } else {
             $('.profile-container').show();
             $('.profile-container').css("visibility", "visible");
-            
+
             $('.admin-panel').hide();
             $('.admin-panel').css("visibility", "hidden");
 
@@ -262,6 +262,14 @@ function fillMapModal(data){
     $('#ulvoorzieningen').html('');
     $('#ulopleidingen').html('');
 
+    if (typeof opleidingen == 'undefined' && opleidingen.length <= 0) {
+        $('#ulopleidingen').hide();
+    }
+
+    if (typeof voorzieningen == 'undefined' && voorzieningen.length <= 0) {
+        $('#ulvoorzieningen').hide();
+    }
+
     opleidingen.forEach(function(opleiding){
         $('#ulopleidingen').append('<li>'+opleiding+'</li>');
     });
@@ -269,6 +277,8 @@ function fillMapModal(data){
     voorzieningen.forEach(function(voorziening){    
         $('#ulvoorzieningen').append('<li>'+voorziening+'</li>');
     });
+
+
     
     if(data.img != undefined){
         $('.infoBuildingImg').attr('src', '../zoeken/Images/'+data.img);
