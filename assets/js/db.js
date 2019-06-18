@@ -287,10 +287,6 @@ function fillMapModal(data){
         $('.infoBuildingImg').attr('src', '../zoeken/Images/placeholder.jpg');
     }   
 
-    //remove class 
-    $('#inconstruction').removeClass("inconstruction");
-    $('#mapInfoModal').css("padding-top","5px");
-    
     //loader test, fill map after 0.6 second (600 ms)
     setTimeout(function(){ 
         $('.buildingInformationLoader').hide();
@@ -300,6 +296,9 @@ function fillMapModal(data){
             // checks if building is under construction
             $('#mapInfoModal').css("padding-top","50px");
             $('#inconstruction').addClass("inconstruction");
+        }else{
+            $('#inconstruction').removeClass("inconstruction");
+            $('#mapInfoModal').css("padding-top","5px");
         }
 
     }, 600);
